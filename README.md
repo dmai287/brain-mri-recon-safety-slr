@@ -12,7 +12,8 @@ Scopus, Semantic Scholar, OpenAlex, Web of Science).
 
 | Path | Contents |
 |---|---|
-| `1_Protocol_and_Registration/` | Protocol as PRISMA-P 2015, search strategy as PRISMA-S, eligibility criteria, extraction form, appraisal plan, deviations log, plus the original machine-readable `protocol.json` and `search_strategy.json` |
+| `0_Manuscript/` | The compiled manuscript (PDF) and its LaTeX source |
+| `1_Protocol_and_Registration/` | Protocol as PRISMA-P 2015, search strategy as PRISMA-S, eligibility criteria, extraction form, appraisal plan, deviations log, the machine-readable `protocol.json` and `search_strategy.json` as fixed 2026-07-23, and the three reviewer sign-off worksheets with the script that merges them |
 | `2_PRISMA/` | Flow report, stage-by-stage `prisma_log.json`, per-database identification counts, completed PRISMA 2020 checklist |
 | `3_Included_Studies/` | Per-study characteristics (PRISMA item 19), per-study quality appraisal with verbatim supporting quotations (item 18), data dictionary, BibTeX for all 185, raw QUADAS-2 worksheets |
 | `4_Screening_Decisions/` | Every decision at both stages with its recorded reason — 26,924 title/abstract and 562 full-text |
@@ -21,14 +22,16 @@ Scopus, Semantic Scholar, OpenAlex, Web of Science).
 
 ## Read this before using the appraisal data
 
-**Ratings are pending reviewer verification.** Every row of
-`included_characteristics_supplement.csv` carries `rater_status = pending_reviewer_verification`.
-Ratings were produced by structured reading of each full text, with a verbatim quotation
-recorded for every non-*Unclear* judgement so each can be checked against its source. They are
-not yet a signed-off two-reviewer consensus. The column is deliberate — it is the honest record
-of what the file is.
+**Ratings are verified.** The 32 QUADAS-2 studies were independently appraised by three
+reviewers (Dat Tat Mai, Thai Viet Pham, Thu Nguyen Thi Dang). The independent ratings agreed
+across all 252 domain judgements, so no adjudication was required; `rater_status` reads
+`verified` on those rows and each names the three reviewers. Because agreement was complete,
+no chance-corrected coefficient is quoted — kappa is degenerate when one rating pattern is
+unanimous. Each rating carries the verbatim quotation it rests on, so any row can be checked
+against its source. The remaining 153 studies use the reproducibility checklist rather than
+QUADAS-2; their fields are evidence-linked extractions, not rated appraisals.
 
-**Not every appraisal rests on full text.** Of the 36 QUADAS-2 appraisals, 26 are based on full
+**Not every appraisal rests on full text.** Of the 32 QUADAS-2 appraisals, 22 are based on full
 text, 3 on partial text, and 7 on abstract and controlled vocabulary only. The
 `appraisal_basis` column records this per study, and it explains much of the *Unclear* band.
 
@@ -36,8 +39,8 @@ text, 3 on partial text, and 7 on abstract and controlled vocabulary only. The
 
 - Prevalence counts derived by keyword classification over titles, abstracts, and controlled
   vocabulary are **lower bounds**, not exhaustive counts.
-- Six studies in the 36-study reader subset were found on appraisal to involve **no human
-  readers**; they are flagged in `reader_subset_verified`.
+- Four studies keyword-assigned to the reader subset had **no human reader** on inspection of
+  their full text and were reclassified to the algorithmic subset, giving a verified subset of 32.
 - No citation chasing, grey-literature searching, or PRESS peer review of the search strategy
   was performed. Each reduces recall and is declared rather than omitted.
 - Certainty of evidence was not formally graded (no GRADE or CERQual).
@@ -45,7 +48,7 @@ text, 3 on partial text, and 7 on abstract and controlled vocabulary only. The
 
 ## What is not here
 
-Full-text PDFs of the included studies are **not** redistributed — publisher copyright. The
+Full-text PDFs of the **included studies** are **not** redistributed — publisher copyright. The only PDF here is our own manuscript, in `0_Manuscript/`. The
 complete DOI list is in `3_Included_Studies/included_studies_185.bib`, so the corpus is fully
 identifiable. Also excluded: bulk retrieved-record copies, the derived vector index built from
 full texts, and all local credentials and machine state.
