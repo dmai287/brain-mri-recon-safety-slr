@@ -9,16 +9,18 @@ authors:
   - family-names: Mai
     given-names: Dat T.
     affiliation: "School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam"
-    # orcid: "https://orcid.org/TODO"
+    orcid: "https://orcid.org/0009-0006-5256-5646"
   - family-names: Pham
     given-names: Thai V.
     affiliation: "School of Computing Technologies, RMIT University, Melbourne, VIC, Australia"
+    orcid: "https://orcid.org/0009-0003-3707-5081"
   - family-names: Dang
     given-names: Thu N. T.
     affiliation: "School of Health and Biomedical Science, RMIT University, Melbourne, VIC, Australia"
   - family-names: Kang
     given-names: James Jin
     affiliation: "School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0000-0002-0242-4187"
 license: CC-BY-4.0
 keywords:
   - systematic review

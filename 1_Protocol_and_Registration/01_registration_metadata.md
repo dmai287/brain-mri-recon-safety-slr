@@ -14,16 +14,27 @@ The Metric Blind Spot in Deep Learning Brain MRI Reconstruction: A Systematic Re
 
 Add in this order; the first is the corresponding author and project administrator.
 
-| # | Name | Affiliation | Role on OSF | ORCID |
-|---|---|---|---|---|
-| 1 | Dat Tat Mai | School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam | Administrator | _add_ |
-| 2 | Thai Viet Pham | School of Computing Technologies, RMIT University, Melbourne, VIC, Australia | Read + Write | _add_ |
-| 3 | Thu Nguyen Thi Dang | School of Health and Biomedical Science, RMIT University, Melbourne, VIC, Australia | Read + Write | _add_ |
-| 4 | James Jin Kang | School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam | Administrator | _add_ |
+| # | Name | Affiliation | E-mail | Role on OSF | ORCID |
+|---|---|---|---|---|---|
+| 1 | Dat Tat Mai | School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam | dat.mai2@rmit.edu.vn | Administrator | [0009-0006-5256-5646](https://orcid.org/0009-0006-5256-5646) |
+| 2 | Thai Viet Pham | School of Computing Technologies, RMIT University, Melbourne, VIC, Australia | s4229249@student.rmit.edu.au | Read + Write | [0009-0003-3707-5081](https://orcid.org/0009-0003-3707-5081) |
+| 3 | Thu Nguyen Thi Dang | School of Health and Biomedical Science, RMIT University, Melbourne, VIC, Australia | S4205224@student.rmit.edu.au | Read + Write | _add_ |
+| 4 | James Jin Kang | School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam | james.kang@rmit.edu.vn | Administrator | [0000-0002-0242-4187](https://orcid.org/0000-0002-0242-4187) |
 
-Contact: dat.mai2@rmit.edu.vn
+Corresponding author and guarantor: Dat Tat Mai (dat.mai2@rmit.edu.vn).
+E-mail addresses match the `\thanks` block of the manuscript.
 
-> Link ORCID iDs before registering — they cannot be added to a registration afterwards.
+All four are added as contributors on the OSF draft, each marked as a bibliographic
+contributor. Three of the four ORCID iDs are recorded above; Thu Nguyen Thi Dang's is
+still outstanding. An ORCID is linked to an OSF *account*, not
+frozen into the registration, so each author can authenticate with ORCID after registering
+and it will attach to their profile. Linking beforehand is tidier, but it is not a blocker.
+
+> Registrations themselves are frozen and cannot be edited or deleted, only
+> withdrawn. Title, description, publication DOI, affiliated institutions, licence
+> and tags remain editable by an administrator afterwards, and further contributors
+> can be added. Plan the *content* of the registration as final; account-level
+> details such as ORCID are not.
 
 ## 3. Project description
 
