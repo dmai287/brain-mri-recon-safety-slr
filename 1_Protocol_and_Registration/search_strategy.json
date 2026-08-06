@@ -1,0 +1,16 @@
+{
+  "label": "mllm-judge-brain-mri-reconstruction-safety-broad",
+  "required_groups": [
+    ["brain MRI", "brain magnetic resonance imaging", "cerebral MRI", "cranial MRI", "neuroimag*", "brain imaging", "brain scan*"],
+    ["image reconstruction*", "MRI reconstruction", "MR reconstruction", "accelerated MRI", "undersampled reconstruction", "k-space reconstruction", "deep learning reconstruction", "neural network reconstruction", "generative reconstruction", "super-resolution MRI", "denoising"],
+    ["hallucinat*", "hallucinated pathology", "geometric distortion", "anatomical distortion", "reconstruction artifact*", "reconstruction error*", "safety evaluation", "trustworthiness", "reliability assessment", "image fidelity", "diagnostic accuracy loss"]
+  ],
+  "mesh_groups": [
+    ["Brain", "Magnetic Resonance Imaging", "Neuroimaging"],
+    ["Image Processing, Computer-Assisted", "Deep Learning", "Machine Learning"],
+    ["Artifacts", "Reproducibility of Results", "Diagnostic Errors"]
+  ],
+  "exclusion": ["animal model", "case report", "in vitro"],
+  "start_year": null,
+  "end_year": null
+}

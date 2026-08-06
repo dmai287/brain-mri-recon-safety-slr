@@ -1,0 +1,248 @@
+[
+  {
+    "key": "S088",
+    "design": "reader study + diagnostic accuracy",
+    "n_readers": 2,
+    "n_subjects": 66,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "Consecutive adult patients .18 years of age who underwent clinical brain MR imaging with the routine brain without contrast MR imaging protocol in the emergency and inpatient settings were included in the study.",
+      "rationale": "Prospective consecutive enrolment of an unselected emergency/inpatient clinical population, with no case-control sampling and no evident inappropriate exclusions."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "For all cases, the ms-EPI was reviewed first, without seeing the reference sequences, and the neuroradiologists were asked to provide the main clinical diagnosis.",
+      "rationale": "The accelerated ms-EPI images were read first and independently by two neuroradiologists blinded to clinical history and acquisition method, with a pre-specified categorical diagnosis scale, although the authors concede true blinding was imperfect for the side-by-side quality comparison."
+    },
+    "reference_standard": {
+      "rating": "High",
+      "evidence": "The reference sequence images were then subsequently reviewed and the neuroradiologists were asked if there was a change in final diagnosis after reviewing the reference sequences.",
+      "rationale": "The reference (10-minute conventional protocol) was interpreted by the same readers immediately after, and with full knowledge of, their index-test diagnosis, so the reference reading was not blinded to the index test."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "All patients underwent both the reference and the ultrafast brain MR protocols. Both brain MR imaging protocols consisted of T1-weighted, T2/T2*-weighted, FLAIR, and DWI sequences.",
+      "rationale": "Every patient received the same reference protocol in the same imaging session and all 66 were analysed; the interval between index and reference acquisition was negligible."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "Sixty-six adult patients who underwent brain MR imaging in the emergency department and inpatient settings were included in the study.",
+      "rationale": "Real-world adult brain MRI patients imaged for acute neurological indications match the review population, although most had no acute finding."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "The ultrafast MR images were reconstructed by using a machine-learning assisted framework.",
+      "rationale": "The index test is a machine-learning-assisted reconstruction of a highly accelerated brain protocol, exactly the technology of interest."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "The average acquisition time was 2.1 minutes for the ultrafast brain MR protocol and 10 minutes for the reference brain MR protocol.",
+      "rationale": "The comparator is the institution's conventional 10-minute standard-of-care brain protocol read by expert neuroradiologists, matching the review's reference standard."
+    }
+  },
+  {
+    "key": "S089",
+    "design": "technical validation with reader assessment",
+    "n_readers": 3,
+    "n_subjects": 50,
+    "patient_selection": {
+      "rating": "High",
+      "evidence": "The inclusion criteria for the participants’ selection were as follows: a) healthy subjects with no known medical history, b) adults aged 18–70 years",
+      "rationale": "Only healthy subjects were enrolled and subjects whose image quality did not meet diagnostic requirements were excluded, which removes the diagnostically difficult spectrum entirely."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "All images were randomized before being presented to the radiologist for evaluation as well as all images were anonymized and labelled with a neutral identifier that does not indicate the acquisition technique.",
+      "rationale": "Readers scored ACS and non-ACS images independently, in randomised order, with acquisition technique concealed and pre-specified 5-point criteria."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "This approach has been considered the gold standard for evaluating ACS-reconstructed images in this study.",
+      "rationale": "The comparator was a fully sampled, conventionally Fourier-reconstructed acquisition, and it was read under the same blinded, randomised conditions as the index images."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Ten MR datasets acquired for each body region with and without ACS technique using different MR contrasts.",
+      "rationale": "Each subject was imaged with and without ACS using otherwise identical parameters in the same session, and data from all 50 subjects entered the analysis."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "The clinical significance of the study is limited by the lack of diseased subjects, which restricts interpretation of the results in a clinical context.",
+      "rationale": "A healthy-volunteer sample containing no pathology, of whom only ten were brain examinations, cannot inform whether accelerated reconstruction preserves diagnostic content in patients."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "ACS uses a randomized undersampling pattern, providing 9 levels of undersampling in total. The corresponding acceleration factor varies from 2 to 4.",
+      "rationale": "AI-assisted compressed sensing reconstruction of prospectively undersampled data at acceleration factors 2-4, including brain sequences, matches the index test of interest."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "The non-ACS reference approach entails obtaining full k-space data without undersampling, enabling the inclusion of all data points.",
+      "rationale": "A fully sampled conventional acquisition assessed by radiologists is the reference standard specified by the review, though only image-quality rather than diagnostic endpoints were scored."
+    }
+  },
+  {
+    "key": "S106",
+    "design": "reader study",
+    "n_readers": 3,
+    "n_subjects": 294,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "A total of 300 consecutive patients (100 glioma patients from each of the three institutions (NYU, Severance, and SNUH) who underwent a dedicated MRI protocol for the evaluation of gliomas",
+      "rationale": "Consecutive retrospective enrolment of 100 glioma patients at each of three institutions with explicit inclusion criteria and no case-control structure."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "All images were anonymized and blinded in terms of patient identification, institutional information and origin, and were presented to the readers in a randomized order.",
+      "rationale": "Blinding is described only for patient identity, institution and origin; the paper never states that readers were blinded to whether an image was DL-enhanced, and the large SNR difference makes that concealment doubtful."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "Each reviewer independently evaluated T2W, T2 FLAIR, postcontrast T1W with the following image quality criteria in conventional and DL-enhanced images based on a 5-point Likert scale",
+      "rationale": "The conventional images acted as comparator and were rated by the same readers with Likert quality scores; no independent diagnostic ground truth was applied and blinding of the comparator reading to processing status is not reported."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Of 300 consecutive patients with gliomas, five patients from NYU dataset were excluded due to incomplete scan range and one patient from Severance dataset was excluded due to image upload failure",
+      "rationale": "Only six technical exclusions are documented, every remaining patient contributed paired conventional and DL images derived from the same acquisition, so the interval is zero."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "The inclusion criteria were as follows: (1) Patients who underwent preoperative glioma MRI protocols between April 2007 and June 2023 and were pathologically confirmed with gliomas and (2) aged ≥ 18 years.",
+      "rationale": "Pathologically confirmed glioma patients scanned on 21 scanners across three countries represent a real clinical brain MRI population, albeit restricted to one disease."
+    },
+    "app_index_test": {
+      "rating": "High",
+      "evidence": "The software was applied to the obtained images in a post-processing manner in the Digital Imaging and Communications in Medicine (DICOM) domain.",
+      "rationale": "No undersampling or scan acceleration was actually performed; DL enhancement was applied post hoc to fully acquired standard images, so the study does not test whether accelerated reconstruction preserves diagnostic content."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "The quantitative and qualitative image parameters were compared between conventional and DL-enhanced images.",
+      "rationale": "The conventional standard-of-care acquisition read by neuroradiologists serves as the comparator specified by the review."
+    }
+  },
+  {
+    "key": "S107",
+    "design": "technical validation with reader assessment",
+    "n_readers": null,
+    "n_subjects": 728,
+    "patient_selection": {
+      "rating": "High",
+      "evidence": "Institutional Review Board approval was not required for this study, as both datasets were obtained from open-access repositories, and the original studies had already received ethical approval.",
+      "rationale": "Subjects are a convenience sample from two public research repositories (IXI and MR-ART) with no clinical indication, no consecutive or random sampling rule, and no patient-level selection criteria."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "The dataset was partitioned into two non-overlapping subsets: a training set (n=480, 54,160 slices) and a testing set (n=100, 11,980 slices).",
+      "rationale": "Evaluation was entirely automated with no human interpretation and no pre-specified diagnostic threshold, so blinding cannot be assessed; the train/test split is reported for IXI but not for the in-vivo MR-ART data."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "This dataset includes three types of images: motion-free ground truth images, motion-corrupted images at level 1, and motion-corrupted images at level 2",
+      "rationale": "The reference is a pixel-level motion-free image rather than any expert reading or target-condition classification, so its ability to correctly classify diagnostic findings is unknown."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Realistic motion artifacts were simulated by perturbing phase encoding lines with random rigid transformations.",
+      "rationale": "Corruption was applied to the same k-space data that provided the ground truth, giving a zero interval, and all test cases received the identical reference with metrics reported for every case."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "although our simulated motion artifact framework closely mimics realistic conditions, the performance of PI-MoCoNet should be validated on larger and more diverse clinical datasets.",
+      "rationale": "Research-repository volunteers with simulated or task-induced motion, and no clinical pathology, do not represent the diagnostic brain MRI population of the review."
+    },
+    "app_index_test": {
+      "rating": "High",
+      "evidence": "The primary goal is to robustly remove motion artifacts from high-resolution brain MRI images without explicit motion parameter estimation, thereby preserving image fidelity and enhancing diagnostic reliability.",
+      "rationale": "The index test is a deep-learning motion-artifact correction network; no undersampled or accelerated acquisition is reconstructed, so it only indirectly addresses accelerated reconstruction safety."
+    },
+    "app_reference_standard": {
+      "rating": "High",
+      "evidence": "Performance was assessed using three quantitative metrics: normalized mean square error (NMSE), peak signal-to-noise ratio (PSNR), and structural similarity index (SSIM)",
+      "rationale": "Only automated similarity metrics were compared against the motion-free image; without any radiologist reading or diagnostic ground truth the reference cannot address preservation of diagnostic content."
+    }
+  },
+  {
+    "key": "S109",
+    "design": "reader study",
+    "n_readers": 3,
+    "n_subjects": 30,
+    "patient_selection": {
+      "rating": "High",
+      "evidence": "Forty patients met the inclusion criteria. However, 10 patients were excluded because of body motion-induced artifacts.",
+      "rationale": "Retrospective single-centre selection limited to patients with stored raw data, followed by exclusion of a quarter of eligible patients for motion artefact, removes precisely the difficult cases most likely to challenge the reconstruction."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "All FLAIR images were anonymized and randomly displayed. The images were independently and blindly evaluated by the three neuroradiologists using a dedicated viewer",
+      "rationale": "The three image types were anonymised, randomised and read blindly and independently against pre-specified 4-point scales, although the hyperintensity task deliberately displayed std-FLAIR alongside the accelerated images."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "Two radiologists with 15 and 17 years of experience, distinct from the three evaluators, selected 100 white matter hyperintensities, each measuring 3–10 mm in diameter.",
+      "rationale": "The reference is the fully sampled std-FLAIR acquisition, with target lesions defined on it by two experienced radiologists independent of the three scoring readers."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "We retrospectively reconstructed 3 × accelerated images (i.e., images obtained by applying AF = 3) using one-third of the fully sampled raw k-space data.",
+      "rationale": "Index and reference images derive from the same raw k-space acquisition, so the interval is zero, all 30 patients received the same reference and all were analysed."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "MRI was performed in the 30 patients for the following conditions: moyamoya disease (n = 8), cerebral aneurysm (n = 5), multiple sclerosis (n = 3), arterial dissection (n = 2)",
+      "rationale": "Clinical patients with genuine white matter hyperintensities across diverse cerebrovascular and inflammatory conditions match the review population."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "We applied deep learning-based reconstruction to the 3 × acc-FLAIR images and designated the resulting images as DLR–FLAIR images.",
+      "rationale": "Deep learning reconstruction of three-fold undersampled brain FLAIR data is exactly the accelerated reconstruction the review addresses."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "The scan time of fully sampled data was 4 min 37 s. The image obtained using this fully sampled method was referred to as the standard FLAIR (std-FLAIR) image.",
+      "rationale": "The fully sampled acquisition read by neuroradiologists is the review's reference standard, though only lesion visibility and not lesion detection was assessed."
+    }
+  },
+  {
+    "key": "S110",
+    "design": "reader study",
+    "n_readers": 2,
+    "n_subjects": 98,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "The prospective analysis was performed on 98 participants who underwent brain T2WI scans using ACS, DLR, and PI techniques.",
+      "rationale": "Abstract only: enrolment is described as prospective but no sampling rule, consecutive recruitment, or inclusion and exclusion criteria are reported."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "Two observers evaluated the overall image quality, truncation artifacts, motion artifacts, cerebrospinal fluid flow artifacts, vascular pulsation artifacts, and the significance of lesions.",
+      "rationale": "Abstract only: two observers scored the images but nothing is stated about blinding to sequence type, randomisation of presentation, or pre-specified thresholds."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "This study systematically evaluates the diagnostic efficacy of the integrated ACS-DLR technique for T2WI at 5.0T, comparing it to conventional parallel imaging (PI) protocols.",
+      "rationale": "Abstract only: the comparator is a conventional parallel-imaging sequence rather than a fully sampled acquisition, and no information is given on blinded interpretation of that comparator."
+    },
+    "flow_timing": {
+      "rating": "Unclear",
+      "evidence": "The prospective analysis was performed on 98 participants who underwent brain T2WI scans using ACS, DLR, and PI techniques.",
+      "rationale": "Abstract only: all participants appear to have received all three sequences, but no exclusions, withdrawals, or acquisition intervals are reported."
+    },
+    "app_patient_selection": {
+      "rating": "Unclear",
+      "evidence": "The prospective analysis was performed on 98 participants who underwent brain T2WI scans using ACS, DLR, and PI techniques.",
+      "rationale": "Abstract only: participants are not characterised as patients or volunteers and no clinical indications are given, so match to the review population cannot be judged."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "The acquisition time for ACS and DLR was reduced by 78%.",
+      "rationale": "AI-assisted compressed sensing combined with deep learning reconstruction of substantially accelerated brain T2-weighted imaging is directly the index test of interest."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "comparing it to conventional parallel imaging (PI) protocols",
+      "rationale": "The comparator is the conventional standard-of-care parallel-imaging brain protocol assessed by observers, which fits the review's standard-of-care reference definition."
+    }
+  }
+]

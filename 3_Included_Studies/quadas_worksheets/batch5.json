@@ -1,0 +1,248 @@
+[
+  {
+    "key": "S111",
+    "design": "technical validation with reader assessment",
+    "n_readers": 4,
+    "n_subjects": 31,
+    "patient_selection": {
+      "rating": "High",
+      "evidence": "This dataset includes 3D T1 MP-RAGE, 3D T2 FLAIR, 2D T1 STIR, and 2D T2 TSE acquisitions with instructed head nodding and shaking motion from 22 healthy participants.",
+      "rationale": "Healthy volunteer convenience samples from two research datasets with deliberately induced motion; no consecutive or random clinical sampling frame is described."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "The metrics were recalculated seven times with varying pre-processing steps.",
+      "rationale": "The index metrics were computed automatically but no threshold was pre-specified and seven pre-processing variants were explored, with the best-correlating configuration reported post hoc."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "the limited quality evaluation (only one experienced radiologist for the CUBRIC dataset versus two radiologists and two technicians for the NRU dataset)",
+      "rationale": "The reference is a subjective 1-5 quality score with only moderate observer agreement for three of four sequences and a single rater in one dataset."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Each sequence was acquired with and without voluntary motion, as well as with and without prospective motion correction. The acquisition without motion and without motion correction served as reference image.",
+      "rationale": "Index and reference images come from the same within-session paired acquisitions, so the interval is negligible and all rated volumes entered the correlation analysis."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "Our current analysis is based on data acquired for research purposes that included a separate 'still' reference scan.",
+      "rationale": "Healthy research volunteers performing instructed motion do not represent a clinical brain MRI population undergoing accelerated reconstruction."
+    },
+    "app_index_test": {
+      "rating": "High",
+      "evidence": "the use of IQMs for benchmarking different image reconstruction or motion correction methods is challenging and might misguide future research",
+      "rationale": "The index test is a panel of image quality metrics for motion correction rather than an accelerated or AI reconstruction, so it addresses the review question only indirectly."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "radiological evaluation of overall image quality is commonly used as a gold standard when investigating the performance of IQMs",
+      "rationale": "Expert radiologist reading plus a motion-free reference acquisition matches the review's definition of the reference standard."
+    }
+  },
+  {
+    "key": "S115",
+    "design": "reader study",
+    "n_readers": 4,
+    "n_subjects": 100,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "100 consecutive patients with various neurological conditions underwent both T2(DR) and T2(CN) on a Siemens Vida 3 T scanner",
+      "rationale": "Consecutive enrolment of an unselected clinical neurological cohort, with no case-control construction or stated inappropriate exclusions."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "Four neuroradiologists evaluated overall image quality (OIQ), diagnostic safety (DS), and image artifacts (IA), blinded to the acquisition mode.",
+      "rationale": "Readers scoring the deep-learning reconstruction were explicitly blinded to whether the acquisition was accelerated or conventional."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "To compare clinical ratings and signal-to-noise ratio (SNR) measures of a commercially available Deep Learning-based MRI reconstruction method (T2(DR)) against conventional T2- turbo spin echo brain MRI (T2(CN)).",
+      "rationale": "The comparator is the full-length conventional T2 turbo spin echo acquisition, rated by the same readers under blinding to acquisition mode."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "underwent both T2(DR) and T2(CN) on a Siemens Vida 3 T scanner with a 64-channel head coil in the same examination",
+      "rationale": "Both sequences were acquired in the same examination so the interval is effectively zero, and results are reported for the full cohort of 100 patients."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "The mean patient age was 43.6 years (SD 20.3), with 54 females.",
+      "rationale": "A routine clinical adult neurological population undergoing brain MRI matches the review question."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "Acquisition times were 3.33 min for T2(CN) and 1.04 min for T2(DR).",
+      "rationale": "A commercial deep-learning reconstruction delivering a roughly three-fold reduction in acquisition time is exactly the index test of interest."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "Our results suggest that while T2(DR) may be clinically applicable for a diagnostic setting, it does not fully match the quality of high-standard conventional T2(CN), MRI acquisitions.",
+      "rationale": "The standard-of-care conventional acquisition read by neuroradiologists is the reference standard the review specifies."
+    }
+  },
+  {
+    "key": "S121",
+    "design": "technical validation with reader assessment",
+    "n_readers": null,
+    "n_subjects": 169,
+    "patient_selection": {
+      "rating": "High",
+      "evidence": "This study was conducted retrospectively using ethically acquired publicly available human subject data.",
+      "rationale": "Convenience reuse of two public datasets built by design around paired motion-free and deliberately motion-corrupted scans, with no consecutive or random clinical sampling rule."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "To train the network, we utilize paired datasets where motion-affected images (simulated via our framework) serve as inputs, and their corresponding ground-truth, artifact-free images act as targets. During training, we optimize using the SSIM loss function.",
+      "rationale": "The correction network is optimised against the same similarity measure later used to judge it and no blinded reading or pre-specified diagnostic threshold was applied, although test patients were held out."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "For each patient, there are three scans: one motion-free scan acquired while the patient remained still and two motion-affected scans acquired while the patient purposefully moved their head to induce artifacts.",
+      "rationale": "A genuinely acquired motion-free scan of the same subject serves as ground truth rather than a simulation."
+    },
+    "flow_timing": {
+      "rating": "Unclear",
+      "evidence": "we applied normalization and performed registration to align the motion-free and motion-affected images in the MR-ART dataset, as the volumes were often misaligned.",
+      "rationale": "Index and reference images came from separate acquisitions that were frequently misaligned and required registration, and the number of subjects and slices in the final MR-ART test set is not reported."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "The motion artifacts in the MR-ART dataset were generated through purposeful movement, which differs from the unintentional and often irregular motion seen in real-world clinical settings.",
+      "rationale": "The population is volunteers performing instructed head movements rather than a clinical cohort whose diagnostic content is at stake."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "DIMA (DIffusing Motion Artifacts), a novel framework that leverages diffusion models to enable unsupervised motion artifact correction in brain MRI.",
+      "rationale": "A deep-learning generative method that alters brain MRI image content falls within the review's index test of AI-based reconstruction and restoration."
+    },
+    "app_reference_standard": {
+      "rating": "High",
+      "evidence": "To validate performance, we quantify restoration accuracy using as metrics structural similarity index (SSIM), mean squared error (MSE) and peak signal-to-noise ratio (PSNR).",
+      "rationale": "The reference acquisition is compared only by global similarity metrics, with no radiologist reading or lesion-level assessment of preserved diagnostic content."
+    }
+  },
+  {
+    "key": "S122",
+    "design": "technical validation with reader assessment",
+    "n_readers": 3,
+    "n_subjects": 62,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "Patient data were consecutively acquired on a 3 T Philips Ingenia Elition scanner equipped with a 32-channel head coil between 08/2021 and 02/2023.",
+      "rationale": "Consecutive acquisition of routine clinical scans over a defined period, with a documented and diagnosis-independent exclusion of five motion-degraded cases."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "The order of the reconstruction methods was randomized, and the raters remained unaware of the method used and the patients' clinical information.",
+      "rationale": "Reconstruction identity was randomised and concealed from all three raters, who were also blinded to clinical information."
+    },
+    "reference_standard": {
+      "rating": "High",
+      "evidence": "For the prospectively acquired patient data, no ground truth data were available, and comparisons with clinically used CS reconstructions prohibited an assessment of changes in diagnosis.",
+      "rationale": "No fully sampled reference exists; the comparator is a compressed-sensing reconstruction of the same 12-fold undersampled data, so the reference cannot establish whether diagnostic content was preserved."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Five subjects were discarded due to excessive motion artifacts, in which there was no exclusion bias toward a particular diagnostic label, resulting in a dataset of fifty-seven (n = 57) subjects.",
+      "rationale": "Both reconstructions derive from identical raw k-space so the interval is zero, all remaining subjects received the same comparator, and withdrawals are fully accounted for."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "All patients included in this study (n = 62, 34 females) came to the hospital as part of the clinical routine, including patients with stroke (n = 8)",
+      "rationale": "A heterogeneous routine clinical cohort with stroke, multiple sclerosis and tumours matches the review's target population."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "Twelve-fold accelerated 3D T2-FLAIR images were obtained from a cohort of 62 patients with neurological deficits on 3 T MRI.",
+      "rationale": "A physics-informed deep-learning reconstruction of highly accelerated prospectively undersampled brain data is precisely the index test of interest."
+    },
+    "app_reference_standard": {
+      "rating": "High",
+      "evidence": "Compressed sensing (CS) is the reference reconstruction method used in the clinic to which we compare our CIRIM method.",
+      "rationale": "The reference is another accelerated reconstruction rather than a fully sampled acquisition, so preserved diagnostic content cannot be verified against a true standard."
+    }
+  },
+  {
+    "key": "S125",
+    "design": "technical validation with reader assessment",
+    "n_readers": 3,
+    "n_subjects": 46,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "although we consecutively enrolled pediatric patients who underwent brain MRI during a specified period, there may have been a selection bias associated with the retrospective design of this study",
+      "rationale": "Consecutive enrolment is claimed but the sample was deliberately capped at the minimum number the institution deemed necessary and the authors concede possible selection bias."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "Readers were also blinded to the MRI acquisition parameters and sequence identifiers.",
+      "rationale": "The three qualitative readers scored a randomised mixture of conventional, accelerated and deep-learning reconstructions while blinded to sequence identity."
+    },
+    "reference_standard": {
+      "rating": "High",
+      "evidence": "For the qualitative analysis of lesion conspicuity, only images with visible lesions on conventional pre- and post-contrast T1-weighted examinations were included.",
+      "rationale": "Lesion truth is defined by the comparator images themselves and readers were given lesion locations in advance, producing incorporation bias; the conventional protocol is also already accelerated rather than fully sampled."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "For the quantitative analysis of MRI quality obtained using pre-contrast T1-weighted image sequences, three patients were excluded due to severe postoperative tissue defects (n = 1) or hypomyelination disease (n = 2).",
+      "rationale": "All three image sets were obtained in the same examination so the interval is zero, and every exclusion is enumerated in a flow chart with all 46 patients retained for qualitative analysis."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "In total, 46 patients (20 male and 26 female) with a mean age of 7.4 years (age range: 5 months to 16 years) were included.",
+      "rationale": "A clinical paediatric brain MRI population with varied indications is a relevant, if age-specific, target group for accelerated reconstruction."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "images acquired using the accelerated acquisition protocol were reconstructed using intensity Filter A and a DL-based reconstruction algorithm (AIRTM Recon DL; GE HealthCare)",
+      "rationale": "A commercial deep-learning reconstruction applied to prospectively accelerated 3D T1 acquisitions matches the review's index test."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "All images acquired using the conventional acquisition protocol were reconstructed using intensity Filter A (i.e., slight sharpening and smoothing) reconstruction (ClariView; GE HealthCare)",
+      "rationale": "The institution's standard-of-care conventional protocol acquired in the same session, read by radiologists, is the review's intended comparator."
+    }
+  },
+  {
+    "key": "S126",
+    "design": "technical validation with reader assessment",
+    "n_readers": 7,
+    "n_subjects": null,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "In the ranking part of this study we included axial T1, T1 post-contrast, T2, and T2FLAIR 2D images (N = 378, 428, 1894, and 216, respectively) from the fastMRI Initiative neuro database.",
+      "rationale": "Slices were drawn from a public database with no stated patient-level sampling rule, no demographics and no description of how cases were chosen."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "A total of 2916 corrupted image pairs were shown to radiologists with random repeats and random left/right ordering on a HTML page.",
+      "rationale": "The ranking task was randomised with concealed left/right ordering and repeat presentations, and readers were given no cues about the corruption applied."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "Image ranking was subjective with a high level of intraobserver agreement ( 94.9 % ± 2.4 % ) and lower interobserver agreement ( 61.47 % ± 5.51 % )",
+      "rationale": "Fully sampled k-space provides a sound image reference, but the radiologist consensus ranking used as the human reference standard showed only moderate interobserver agreement."
+    },
+    "flow_timing": {
+      "rating": "High",
+      "evidence": "considering the difference in their time commitment, the numbers of rankings from readers varied, which may introduce bias in the majority vote.",
+      "rationale": "Image pairs did not all receive the same reference standard because readers contributed very unequal numbers of rankings and could skip pairs, biasing the consensus label."
+    },
+    "app_patient_selection": {
+      "rating": "Unclear",
+      "evidence": "The study is retrospective only and the dataset only consisted of axial brain scans.",
+      "rationale": "The scans are real clinical brain MRI but no clinical indications, pathology prevalence or patient characteristics are reported, so population match cannot be judged."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "We undersampled the multichannel k-space data by Poisson disc with an acceleration factor of 16X.",
+      "rationale": "Model-based deep-learning reconstruction of 8-fold and 16-fold undersampled brain k-space is directly within the review's index test."
+    },
+    "app_reference_standard": {
+      "rating": "High",
+      "evidence": "Synthetically corrupted image pairs were ranked by radiologists (N = 7), with a subset also scoring images using a Likert scale (N = 2).",
+      "rationale": "Radiologists judged synthetically corrupted images rather than the accelerated reconstructions themselves, which were compared to the fully sampled reference by automated metrics only."
+    }
+  }
+]
