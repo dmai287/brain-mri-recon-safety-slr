@@ -1,0 +1,248 @@
+[
+  {
+    "key": "S139",
+    "design": "technical validation with reader assessment",
+    "n_readers": 4,
+    "n_subjects": 150,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "Patients who visited the neurology clinic between August 2022 and February were consecutively enrolled.",
+      "rationale": "Prospective consecutive enrolment from a defined clinic population with explicit inclusion/exclusion criteria and random assignment to the three scanner vendors."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "randomized datasets were presented for rating, with reconstruction methods and clinical information blinded by removing and anonymizing the DICOM headers.",
+      "rationale": "Readers were blinded to the reconstruction method, cases were presented in randomized order, and the Likert scales were pre-specified."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "A typical randomized crossover design with a 4-week washout period was used [15].",
+      "rationale": "The conventional acquisition served as the standard-of-care reference and was read by the same blinded readers in a randomized crossover with washout, so reference reading was not informed by the index images."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "The patients underwent both conventional and Accel-DL brain MRI protocols, including 2D axial T1WI, T2WI, T2-FLAIR, and 3D T1WI.",
+      "rationale": "Every participant received both index and reference acquisitions in the same session (zero interval) and all 150 enrolled participants entered the final analysis."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "this prospective evaluation did not include patients with large lesions or structural distortions, such as acute hemorrhage, infarction, or tumors, highlighting the need for further research.",
+      "rationale": "By design the cohort excluded acute focal deficits and the space-occupying pathologies most relevant to whether accelerated reconstruction preserves diagnostic content."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "A DICOM-based U-Net architecture was developed in a supervised manner and trained on numerous image pairs to transform low-quality images from undersampled k-space data into high-quality images",
+      "rationale": "The index test is a commercial deep-learning reconstruction of prospectively undersampled data giving ~39% scan-time reduction, directly matching the review question."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "Conventional and Accel-DL MRI images were obtained from each participant and compared using 2D T1- and T2-weighted and 3D gradient-echo sequences.",
+      "rationale": "The reference is the routine clinical (non-accelerated) acquisition read by neuroradiologists, which matches the review's reference-standard definition."
+    }
+  },
+  {
+    "key": "S141",
+    "design": "technical validation with reader assessment",
+    "n_readers": 3,
+    "n_subjects": 31,
+    "patient_selection": {
+      "rating": "Low",
+      "evidence": "Participants were consecutively recruited from March to June 2022 and in November 2023.",
+      "rationale": "Prospective consecutive recruitment of children referred for clinically indicated brain MRI across a broad range of indications, with no case-control structure."
+    },
+    "index_test": {
+      "rating": "Low",
+      "evidence": "Three blinded radiologists with 10 years (rater 1), 6 years (rater 2), and 3 years (rater 3) of experience independently rated both sequences",
+      "rationale": "Readers were stated to be blinded, rated independently, and used a pre-defined 5-point Likert scale with category definitions given in Table 2."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "The T2PROPELLER CS sequence was compared to a conventional, CS-accelerated Cartesian turbo-spin-echo T2-weighted sequence (T2Cartesian CS).",
+      "rationale": "The comparator is the routine clinical T2 sequence, rated by the same blinded independent readers, so reference interpretation was not informed by knowledge of the index result."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "The T2PROPELLER CS sequence was acquired before the T2Cartesian CS sequence for 4 of the anesthetized patients and after for the remaining patients.",
+      "rationale": "Both sequences were acquired in the same examination in the same orientation for every patient, and all 31 patients were analysed; only acquisition order varied."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "Twenty-one of the 31 patients had lesions, including pre- and post-treatment astrocytic tumors such as pilocytic astrocytomas of the cerebellum",
+      "rationale": "A real clinical brain-MRI population with a high prevalence of genuine pathology, appropriate for judging preservation of diagnostic content."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "Enabling faster and motion-robust MRI of the brain in infants and children using a novel, enhanced compressed sensing (CS) algorithm in combination with a turbo-spin-echo T2-weighted sequence utilizing the PROPELLER-technique",
+      "rationale": "The index test is an accelerated acquisition/reconstruction (31% shorter scan) evaluated in brain MRI, matching the review question."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "Clinically, a Cartesian sampling scheme is most commonly employed for its robust data collection, practical implementation",
+      "rationale": "The comparator is the standard-of-care clinical sequence permitted by the review definition, although it is itself CS-accelerated rather than fully sampled."
+    }
+  },
+  {
+    "key": "S145",
+    "design": "technical validation with reader assessment",
+    "n_readers": null,
+    "n_subjects": 728,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "The IXI dataset comprises 580 cases of T1-weighted (T1-w) brain MRI images.",
+      "rationale": "Retrospective convenience use of two public datasets with no stated patient eligibility criteria, sampling frame, or clinical context."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "To quantitatively assess the performance of the models in removing brain motion ARTs, we reported three metrics: normalized mean squared error (NMSE), structural similarity index measure (SSIM), and peak signal-to-noise ratio (PSNR).",
+      "rationale": "Evaluation was entirely by automated similarity metrics with no reader interpretation, so blinding and pre-specified diagnostic thresholds cannot be assessed."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "This dataset includes three types of images: ground truth motion-free images, motion-corrupted images with a low level of distortion (level 1), and motion-corrupted images with a high level of distortion (level 2).",
+      "rationale": "Matched motion-free acquisitions (in-vivo) and the original uncorrupted images (in-silico) provide an appropriate paired ground truth applied identically to every case."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "Rigid brain image registration was performed using FSL-FLIRT (Jenkinson and Smith 2001, Jenkinson et al 2002) to compensate for misalignment between the motion-free and motion-corrupted images.",
+      "rationale": "Fully paired design in which every test case has its own reference; the in-silico corruption is applied to the same data so the interval is zero and no cases were dropped."
+    },
+    "app_patient_selection": {
+      "rating": "Unclear",
+      "evidence": "Additionally, model performance on in-vivo data was evaluated using the MR-ART T1-w brain MRI dataset, which comprises 148 cases (95 females and 53 males).",
+      "rationale": "Only counts and sex are reported; clinical indication, age and presence of pathology are unstated, so match to a clinical brain-MRI population cannot be judged."
+    },
+    "app_index_test": {
+      "rating": "High",
+      "evidence": "It is important to note that our study was conducted in the image domain, rather than in k-space.",
+      "rationale": "The index test is retrospective post-processing of reconstructed magnitude images for motion artefact removal, not an accelerated reconstruction from undersampled acquisition."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "We adapted the motion simulation technique of Duffy et al (2021) to generate an in-silico dataset with varying levels of motion ARTs including high, moderate, and minor",
+      "rationale": "The reference is the clean/motion-free acquisition, which satisfies the review's reference-standard definition, although no expert reading of the reference was performed."
+    }
+  },
+  {
+    "key": "S168",
+    "design": "technical validation with reader assessment",
+    "n_readers": 2,
+    "n_subjects": 62,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "Participants were recruited between October and December 2024. Written informed consent was obtained from all patients’ legal guardians prior to participation in the study.",
+      "rationale": "Prospective single-centre recruitment over a fixed window, but no statement that enrolment was consecutive or random and no eligibility/exclusion rule is given."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "all images were analyzed by two radiologists with 4 (rater 1) and 9 (rater 2) years of experience, who independently rated T2-SSHconv- and T2-SSHDL-sequences qualitatively on a five-point Likert scale",
+      "rationale": "Ratings were independent and the Likert scale pre-defined, but blinding of the readers to the reconstruction type is never reported."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "the two radiologists compared T2-SSHDL-sequences with high-resolution T2-weighted sequences for the categories artifacts and lesion conspicuity, using the aforementioned five-point Likert scale",
+      "rationale": "The routine high-resolution T2 sequence is a plausible reference, but it was read in direct paired comparison with the index images and blinding is not described; no pathology-level verification was performed."
+    },
+    "flow_timing": {
+      "rating": "Low",
+      "evidence": "The raw data of these sequences were reconstructed using a prototypical DL-based reconstruction framework provided by the vendor that combines and integrates CS with two different CNNs",
+      "rationale": "Index and conventional images derive from identical raw data (zero interval) and all 62 enrolled patients contributed to the analysis."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "33 of the 62 patients had lesions, including tumors such as gliomas, astrocytomas, craniopharyngiomas or embryonal tumors with multilayered rosettes",
+      "rationale": "Clinically indicated paediatric brain MRI with a wide indication spectrum and genuine pathology in half the cohort, well matched to the review question."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "This study aimed to evaluate a novel DL-based reconstruction framework for T2-weighted single-shot brain MRI in a pediatric cohort that integrates CS acceleration with convolutional neural networks (CNNs)",
+      "rationale": "A vendor deep-learning reconstruction of compressed-sensing accelerated raw k-space data, exactly the class of index test the review addresses."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "In sedated patients, high-resolution T2-weighted sequences achieved superior image quality and lesion conspicuity, as motion was minimized.",
+      "rationale": "Both comparators (conventional CS reconstruction of the same raw data and routine high-resolution T2) are standard-of-care acquisitions read by radiologists."
+    }
+  },
+  {
+    "key": "S178",
+    "design": "technical validation with reader assessment",
+    "n_readers": 3,
+    "n_subjects": null,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "After quality control, the dataset comprised 50 matched uLF–HF pairs, 100 HF-only scans, and 130 uLF-only scans.",
+      "rationale": "Single-centre retrospective convenience sample with no stated eligibility rule and unspecified quality-control exclusions; the number of distinct neonates is never given."
+    },
+    "index_test": {
+      "rating": "Unclear",
+      "evidence": "Raters were not shown the original scans; therefore, the study is not clinically applicable, and diagnostic decisions were not permitted due to ethical constraints.",
+      "rationale": "Raters saw only model outputs with no comparator and no reference images; scoring categories are minimal (bad/acceptable/good) and no pre-specified diagnostic threshold is described."
+    },
+    "reference_standard": {
+      "rating": "Unclear",
+      "evidence": "HF data were obtained from multiple clinical 3 T scanners with heterogeneous resolutions",
+      "rationale": "The high-field reference was acquired on multiple scanners with heterogeneous protocols, and the truth source for the reported pathology-detection accuracy is not described."
+    },
+    "flow_timing": {
+      "rating": "High",
+      "evidence": "Tests were conducted on 46 matched uLF–HF pairs (34 for LF-SynthSR, which requires T2-weighted input).",
+      "rationale": "Of 50 matched pairs only 46 were tested and the headline table reports 34, comparator methods were evaluated on different subsets, and the uLF-to-HF acquisition interval is never stated."
+    },
+    "app_patient_selection": {
+      "rating": "Low",
+      "evidence": "The cohort included neonates under six months of age with nine different pathologies.",
+      "rationale": "Real clinical neonatal brain MRI including pathological cases, an appropriate population for judging preservation of diagnostic content."
+    },
+    "app_index_test": {
+      "rating": "High",
+      "evidence": "We propose MRIQT, a 3D conditional diffusion framework for image quality transfer (IQT) from uLF to HF MRI.",
+      "rationale": "The index test is generative cross-field-strength image synthesis rather than accelerated reconstruction of the subject's own undersampled data, a substantial mismatch with the review question."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "High-field magnetic resonance imaging (HF-MRI) remains the gold standard for structural and functional assessment",
+      "rationale": "3 T high-field MRI is the accepted standard-of-care reference acquisition anticipated by the review's reference-standard definition."
+    }
+  },
+  {
+    "key": "S179",
+    "design": "technical validation with reader assessment",
+    "n_readers": null,
+    "n_subjects": 8,
+    "patient_selection": {
+      "rating": "Unclear",
+      "evidence": "All experiments are conducted on the multicoil test split provided by the dataset, restricted to T1-weighted volumes.",
+      "rationale": "Evaluation relies on convenience use of public dataset splits with no patient-level eligibility criteria, recruitment description, or consecutive/random sampling."
+    },
+    "index_test": {
+      "rating": "High",
+      "evidence": "For severe motion scans we keep N = 200, while for all remaining scans we use N = 100.",
+      "rationale": "A key index-test setting (number of reverse diffusion iterations) was chosen per scan using the reference-derived motion-severity label, so the index test was not pre-specified or applied uniformly; no blinded reader interpretation exists."
+    },
+    "reference_standard": {
+      "rating": "Low",
+      "evidence": "we adopt the same motion severity categorization (mild, moderate, and severe) as in Wang et al. [43] and use the ℓ1-regularized reconstruction of the motion-free scan as the reference.",
+      "rationale": "The subject's own motion-free acquisition serves as reference and was applied identically to the index method and all baselines with uniform registration, masking and normalisation."
+    },
+    "flow_timing": {
+      "rating": "Unclear",
+      "evidence": "The dataset provides four scans per subject: one motion-free and three motion-corrupted scans.",
+      "rationale": "Four scans across 8 subjects implies 32 volumes but only 27 are reported and 24 motion-corrupted scans are analysed, and the missing volumes are not accounted for."
+    },
+    "app_patient_selection": {
+      "rating": "High",
+      "evidence": "We conduct real-motion experiments using the PMoC3D dataset [43], which comprises 27 volumes from 8 healthy subjects.",
+      "rationale": "Real-motion evaluation uses only healthy volunteers (and public research datasets), so preservation of clinically relevant lesions cannot be assessed."
+    },
+    "app_index_test": {
+      "rating": "Low",
+      "evidence": "we propose a unified Bayesian framework for motion-compensated 3D MRI that jointly estimates the anatomical image, rigid-body motion parameters, and coil sensitivity maps directly from motion-corrupted k-space data",
+      "rationale": "The index test reconstructs directly from accelerated (R = 4-8) undersampled k-space using a learned diffusion prior, matching the review's index-test definition."
+    },
+    "app_reference_standard": {
+      "rating": "Low",
+      "evidence": "We first generate synthetic inter-shot motion trajectories to corrupt k-space data from the fully sampled FastMRI dataset using 52 acquisition shots. Reconstructions are compared against the original motion-free reference volumes.",
+      "rationale": "Fully sampled motion-free volumes serve as the reference, satisfying the review definition, although no expert radiologist reading of the reference was performed."
+    }
+  }
+]

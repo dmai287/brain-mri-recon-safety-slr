@@ -1,0 +1,46 @@
+{
+  "identified_total": 27327,
+  "records_per_source": {
+    "PubMed": 24693,
+    "IEEE Xplore": 778,
+    "Springer": 1598,
+    "Semantic Scholar": 66,
+    "Scopus": 127,
+    "Web of Science": 31,
+    "OpenAlex": 34
+  },
+  "preprint_total": 0,
+  "published_total": 27327,
+  "preprints_per_source": {},
+  "reported_hits": {
+    "IEEE Xplore": 778,
+    "OpenAlex": 50,
+    "Scopus": 127,
+    "Semantic Scholar": 66,
+    "Springer": 1598,
+    "Web of Science": 31,
+    "PubMed": 24693
+  },
+  "duplicates_removed": 403,
+  "duplicates_per_source": {
+    "PubMed": 203,
+    "IEEE Xplore": 91,
+    "Scopus": 87,
+    "Web of Science": 22
+  },
+  "unique_records": 26924,
+  "dedup_actions": {
+    "keep_unique": 26924,
+    "exclude_duplicate": 403
+  },
+  "dedup_run_date": "2026-07-24",
+  "sources": [
+    "PubMed",
+    "Scopus",
+    "Web of Science",
+    "IEEE Xplore",
+    "OpenAlex",
+    "Semantic Scholar",
+    "Springer"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "research_question": "Can multimodal large language models (M-LLMs), used as automated judges, reliably evaluate the safety of AI/ML-based brain MRI reconstruction methods — including via causal discovery and counterfactual diffusion-based simulation — compared to other safety-evaluation approaches?",
+  "framework": {
+    "name": "PICOS",
+    "rationale": "No clinical patient population is directly studied; PICOS is adapted so 'Population' is the class of AI reconstruction methods under evaluation, letting Comparator and Outcome capture the evaluation-methodology comparison this review is about, while Study design isolates methodological/technical contributions.",
+    "elements": [
+      {"name": "Population", "value": "AI/ML-based brain MRI reconstruction methods (any architecture: deep-learning accelerated, denoising, super-resolution, generative/diffusion-based reconstruction)"},
+      {"name": "Intervention", "value": "Multimodal LLM (M-LLM) used as an automated judge, optionally combined with causal discovery and/or counterfactual diffusion-based simulation, to evaluate reconstruction safety"},
+      {"name": "Comparator", "value": "Any alternative safety/quality evaluation approach — radiologist ground-truth review, pixel-wise metrics (SSIM/PSNR/LPIPS), other automated or LLM-based evaluators, or no comparator (proposing a new metric)"},
+      {"name": "Outcome", "value": "Ability to detect/quantify reconstruction safety failures — hallucinated pathology, geometric/anatomical distortion, and other fidelity or trustworthiness failure modes"},
+      {"name": "Study design", "value": "Methodological or technical contributions (new methods, benchmarks, evaluation frameworks); clinical-only studies without a technical evaluation contribution are out of scope"}
+    ]
+  },
+  "concepts": [
+    {
+      "name": "Brain MRI / Neuroimaging",
+      "required": true,
+      "terms": ["brain MRI", "brain magnetic resonance imaging", "cerebral MRI", "cranial MRI", "neuroimag*", "brain imaging", "brain scan*"],
+      "mesh": ["Brain", "Magnetic Resonance Imaging", "Neuroimaging"]
+    },
+    {
+      "name": "AI/ML Image Reconstruction",
+      "required": true,
+      "terms": ["image reconstruction*", "MRI reconstruction", "MR reconstruction", "accelerated MRI", "undersampled reconstruction", "k-space reconstruction", "deep learning reconstruction", "neural network reconstruction", "generative reconstruction", "super-resolution MRI", "denoising"],
+      "mesh": ["Image Processing, Computer-Assisted", "Deep Learning", "Machine Learning"]
+    },
+    {
+      "name": "Reconstruction Safety / Fidelity Evaluation",
+      "required": true,
+      "terms": ["hallucinat*", "hallucinated pathology", "geometric distortion", "anatomical distortion", "reconstruction artifact*", "reconstruction error*", "safety evaluation", "trustworthiness", "reliability assessment", "image fidelity", "diagnostic accuracy loss"],
+      "mesh": ["Artifacts", "Reproducibility of Results", "Diagnostic Errors"]
+    },
+    {
+      "name": "LLM-as-Judge / Automated Evaluation Methodology",
+      "required": false,
+      "terms": ["LLM*", "large language model*", "LLM-as-judge", "LLM as a judge", "LLM evaluat*", "language model* as judge*", "GPT-4 evaluat*", "multimodal large language model*", "MLLM", "M-LLM", "vision-language model*", "foundation model* evaluat*", "causal discovery", "counterfactual diffusion", "counterfactual simulation", "diffusion model*"],
+      "mesh": ["Natural Language Processing"]
+    }
+  ],
+  "exclusion_terms": ["animal model", "case report", "in vitro"],
+  "inclusion_criteria": [
+    "Proposes or evaluates a method for assessing the safety, reliability, or fidelity of AI/ML-based MRI reconstruction (brain imaging, or general reconstruction methods clearly applicable to brain MRI)",
+    "Addresses at least one reconstruction failure mode: hallucinated/fabricated pathology, omitted true pathology, geometric or anatomical distortion, or related fidelity artifacts",
+    "Uses or evaluates LLM-as-judge, multimodal LLM evaluation, causal discovery, counterfactual simulation, or diffusion-based simulation as (part of) the evaluation methodology, OR is a closely comparable automated/human evaluation baseline",
+    "Peer-reviewed journal article, conference paper, or reputable preprint (arXiv/medRxiv) with a methodological or technical contribution",
+    "English language"
+  ],
+  "exclusion_criteria": [
+    "Purely clinical study with no technical/methodological evaluation contribution",
+    "Animal-only or phantom-only studies with no relevance to human brain MRI",
+    "Editorial, letter, or commentary with no original methodology",
+    "Duplicate or superseded conference version where a fuller journal version exists",
+    "Non-English full text"
+  ],
+  "date_range": {"start_year": null, "end_year": null},
+  "languages": ["English"],
+  "notes": "Reviewer explicitly requested no date limit (overriding the tool's default latest-3-years window), given the fast-moving nature of M-LLMs and diffusion models. Comparator and safety-failure scope were deliberately kept broad per reviewer guidance ('all ML', 'all comparators', 'maybe all' failure modes) since this is framed as a review paper surveying the evaluation landscape, not a narrow technique comparison. Concept 4's term list was broadened (LLM*, large language model*, verb-form wildcards) since the exact phrase 'LLM-as-judge' would otherwise under-recall, and standalone 'LLM' was truncated to 'LLM*' to also catch plural/hyphenated forms in one term. Concept 4 was then switched to required:false (dropped from the AND-ed search) at the reviewer's request to broaden recall — the search is now (Brain MRI) AND (Reconstruction) AND (Safety/Fidelity Evaluation), catching general reconstruction-safety literature even when it doesn't mention LLMs/M-LLMs; the concept stays documented for reference/screening but no longer gates retrieval. This broadened PubMed's hit count from 156 to 24,692 (Scopus 8->127, Semantic Scholar 7->66), run into a separate folder from the narrow-search results.",
+  "conflict_resolutions": [],
+  "reviewer_clarifications": [
+    "Failure mode / safety definition -> hallucinated pathology, geometric/anatomical distortion, but broadened to cover the space since this is a review paper",
+    "Comparator -> all (radiologist ground truth, pixel-wise metrics, other automated methods)",
+    "Scope of reconstruction methods -> all AI/ML-based methods, not diffusion-specific",
+    "Eligible study types & timeframe -> methodological/technical papers only, no date limit",
+    "Broaden search -> drop LLM-as-Judge concept from the required AND to widen recall"
+  ],
+  "_meta": {
+    "question": "M-LLM-as-a-Judge: Causal Discovery and Counterfactual Diffusion Simulation for Evaluating Brain MRI Reconstruction Safety",
+    "backend": "interactive (Claude Code conversation, no protocol_agent.py API call)",
+    "model": "claude-sonnet-5",
+    "generated": "2026-07-23"
+  }
+}

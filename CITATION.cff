@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the article below."
+title: "The Metric Blind Spot in Deep Learning Brain MRI Reconstruction: review materials"
+abstract: >-
+  Protocol, search strategy, PRISMA records, per-study extracted data, screening
+  decisions, and analysis code for a systematic review of how the safety, artifacts,
+  and fidelity of deep-learning brain MRI reconstruction are evaluated.
+authors:
+  - family-names: Mai
+    given-names: Dat T.
+    affiliation: RMIT University
+    # orcid: "https://orcid.org/TODO"
+license: CC-BY-4.0
+keywords:
+  - systematic review
+  - PRISMA 2020
+  - brain MRI
+  - image reconstruction
+  - deep learning
+  - risk of bias
+# repository-code: "https://github.com/TODO/brain-mri-recon-safety-slr"
+# preferred-citation:  # add DOI once the article is published
