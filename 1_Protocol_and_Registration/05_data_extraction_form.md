@@ -25,7 +25,7 @@ Data dictionary: `../LaTex PDF/included_characteristics_README.md`.
 | `source_record` | Text | Filename of the source record |
 
 Multi-valued fields are `;`-separated. A study may carry several method families or failure
-modes; totals therefore exceed 185 by design (254 method-family labels, 107 evaluation labels).
+modes; totals therefore exceed 185 by design (254 method-family labels, 103 evaluation labels).
 
 ## 2. Coding rules
 

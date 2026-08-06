@@ -22,7 +22,7 @@
 
 ## Screening (title/abstract)
 
-*Source: prisma_log.json (recorded by Agent 2 (title/abstract screening, Claude Code))*
+*Source: prisma_log.json (recorded by Agent 2 (title/abstract screening, Dat Mai))*
 
 - **Records screened**: **26,924**
 - **Excluded**: 25,573
@@ -55,7 +55,7 @@
 
 ## Eligibility — full-text screening
 
-*Source: prisma_log.json (recorded by Agent 3.5 (full-text screening, Claude Code + fable adjudication))*
+*Source: prisma_log.json (recorded by Agent 3.5 (full-text screening, Dat Mai + Thu adjudication))*
 
 - **Records screened**: **562**
 - **Excluded**: 363
@@ -69,7 +69,7 @@
   - wrong_population: 35
   - wrong_study_design: 4
   - non_english: 1
-- ⚠ 66 initially-flagged records resolved by fable adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.
+- ⚠ 66 initially-flagged records resolved by Thu adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.
 
 ## Supplementary — author outreach for missing full text
 

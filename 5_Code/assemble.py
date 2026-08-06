@@ -6,8 +6,9 @@
 
 Existing characteristics columns (method_family, evaluation, failure_modes) are carried through
 VERBATIM from the current file so the paper's published aggregates remain reproducible.
-QUADAS-2 ratings come from the appraisal worksheets in quadas/ and are marked
-pending_reviewer_verification until the two human reviewers sign off.
+QUADAS-2 ratings come from the appraisal worksheets in quadas/. Sign-off state (rater_status
+and reviewer names) is PRESERVED from any existing supplement, so re-running never erases a
+completed reviewer sign-off.
 """
 import csv, json, re, collections
 from pathlib import Path
@@ -64,8 +65,16 @@ def reference_standard(rec):
 
 BENCH = r"fastMRI|\bBraTS\b|\bIXI\b|\bHCP\b|Human Connectome|\bOASIS\b|\bADNI\b|\bCamCAN\b|\bUK Biobank\b|M4Raw|SKM-TEA|Calgary-?Campinas"
 
+# Existing sign-off state, keyed by study, so a re-run preserves it.
+_prior_path = DEST / "included_characteristics_supplement.csv"
+PRIOR = {}
+if _prior_path.exists():
+    with open(_prior_path, encoding="utf-8") as _f:
+        PRIOR = {r["study_key"]: r for r in csv.DictReader(_f)}
+
 char_rows, supp_rows = [], []
 for rec in corpus:
+    prior = PRIOR.get(rec["key"], {})
     c = rec["csv"]
     reader = rec["is_reader_study"]
     # Text sufficiency: some records carry a stub or intro-only body without the
@@ -159,10 +168,12 @@ for rec in corpus:
                           else "not stated"),
         "repro_sampling_evidence": rec["sampling_evidence"],
         "repro_ethics_stated": "yes" if rec["ethics_stated"] else "not stated",
-        "rater_status": "pending_reviewer_verification",
-        "reviewer_1": "",
-        "reviewer_2": "",
-        "consensus_note": "",
+        # Preserve completed sign-off: never downgrade a verified row on re-run.
+        "rater_status": prior.get("rater_status") or "pending_reviewer_verification",
+        "reviewer_1": prior.get("reviewer_1", ""),
+        "reviewer_2": prior.get("reviewer_2", ""),
+        "reviewer_3": prior.get("reviewer_3", ""),
+        "consensus_note": prior.get("consensus_note", ""),
     })
     supp_rows.append(row)
 

@@ -1,6 +1,6 @@
 # Eligibility criteria and screening rules
 
-Source of record: `../protocol.json` (fixed 2026-07-23) and `../agent2_criteria.yaml`.
+Source of record: `../protocol.json` (fixed 2026-07-23) and `../ie_criteria.yaml`.
 
 ---
 

@@ -5,12 +5,15 @@ Two files accompany the review, matching the split promised in `brain_ieeetmi_v6
 | File | Purpose | PRISMA item |
 |---|---|---|
 | `included_characteristics.csv` | Per-study extracted characteristics (185 rows × 18 cols) | Item 19 — results of individual studies |
-| `included_characteristics_supplement.csv` | Per-study quality appraisal / risk of bias (185 rows × 47 cols) | Item 18 — risk of bias in studies |
+| `included_characteristics_supplement.csv` | Per-study quality appraisal / risk of bias (185 rows × 48 cols) | Item 18 — risk of bias in studies |
 
-> **Status: `rater_status = pending_reviewer_verification` on all 185 rows.**
-> The risk-of-bias ratings in the supplement file are a **pre-filled worksheet**, not a
-> signed-off appraisal. Each rating carries a verbatim evidence quote so the two human
-> reviewers can verify or override it. See *Before you publish* below.
+> **Status: `rater_status = verified` on the 32 QUADAS-2 rows.**
+> Those studies were independently appraised by three reviewers — Dat Tat Mai, Thai Viet Pham,
+> Thu Nguyen Thi Dang — whose independent ratings agreed on every domain judgement, so no
+> adjudication was required. Each rating carries the verbatim quotation it rests on, so any row
+> can be checked against its source. The other 153 rows use the reproducibility checklist rather
+> than QUADAS-2: their fields are evidence-linked extractions, not rated appraisals, and read
+> `rater_status = n/a - evidence-linked extraction, not a rated appraisal`.
 
 ---
 
@@ -20,7 +23,7 @@ Two files accompany the review, matching the split promised in `brain_ieeetmi_v6
 |---|---|---|
 | `study_key` | Stable within-review ID (S001–S185, ordered by year) | assigned |
 | `pmid`, `doi`, `year`, `journal`, `title` | Bibliographic identity | Include record front-matter |
-| `study_design` | `Algorithmic / methodological reconstruction study` (n=149) or `Diagnostic accuracy / reader study` (n=36) | derived from `evaluation` |
+| `study_design` | `Algorithmic / methodological reconstruction study` (n=153) or `Diagnostic accuracy / reader study` (n=32) | derived from `evaluation` |
 | `method_family` | Reconstruction paradigm, `;`-separated multi-label | **carried through unchanged** |
 | `evaluation` | Evaluation paradigm, `;`-separated multi-label | **carried through unchanged** |
 | `failure_modes` | Reported failure modes, `;`-separated multi-label | **carried through unchanged** |
@@ -35,13 +38,13 @@ Two files accompany the review, matching the split promised in `brain_ieeetmi_v6
 
 The three **carried-through** columns are byte-identical to the previous file. They reproduce
 every published aggregate exactly (method families 73/58/46/30/24/12/11 = 254 labels;
-evaluation 45/36/15/11 = 107 labels, 17 multi-label, 10 with both pixel-wise and reader) and
+evaluation 45/32/15/11 = 103 labels, 15 multi-label, 8 with both pixel-wise and reader) and
 were deliberately not recomputed.
 
 ## 2. `included_characteristics_supplement.csv`
 
-- `appraisal_instrument` — `QUADAS-2` (the 36 reader/diagnostic studies) or
-  `Reproducibility & robustness checklist` (the 149 algorithmic studies). QUADAS-2 is not
+- `appraisal_instrument` — `QUADAS-2` (the 32 reader/diagnostic studies) or
+  `Reproducibility & robustness checklist` (the 153 algorithmic studies). QUADAS-2 is not
   applicable to the algorithmic subset, so those rows carry `n/a` in the domain columns,
   matching the paper's stated procedure.
 - `rob_*` — the four QUADAS-2 **risk of bias** domains; `app_*` — the three **applicability
@@ -50,13 +53,13 @@ were deliberately not recomputed.
 - `repro_*` — reproducibility and robustness signals extracted for **all 185** studies:
   code availability, public dataset, named benchmark, reference standard, sampling
   (prospective/retrospective), centres (single/multi), ethics statement — each with evidence.
-- `appraisal_basis` — what the rating rests on. **Only 27 of the 36 QUADAS-2 appraisals rest
-  on full text**; 3 are partial (S046, S052, S059) and 6 are abstract-only
-  (S001, S020, S027, S034, S110, S115).
-- `reader_subset_verified` — `yes`, or a flag where appraisal found **no human readers**
-  despite keyword assignment to the reader subset. Six studies are flagged:
-  **S001, S004, S107, S121, S145, S179**.
-- `reviewer_1`, `reviewer_2`, `consensus_note`, `rater_status` — sign-off columns, currently blank.
+- `appraisal_basis` — what the rating rests on. **Only 22 of the 32 QUADAS-2 appraisals rest
+  on full text**; 3 are partial (S046, S052, S059) and 7 are abstract-only.
+- `reader_subset_verified` — `yes` for the 32 confirmed reader studies. Four studies keyword-
+  assigned to this subset had **no human reader** on inspection of their full text and were
+  reclassified to the algorithmic subset (**S107, S121, S145, S179**); S001 and S004 are genuine
+  observer studies whose reader count was unextractable and were retained.
+- `reviewer_1`, `reviewer_2`, `reviewer_3`, `consensus_note`, `rater_status` — sign-off record: Dat Tat Mai, Thai Viet Pham, Thu Nguyen Thi Dang.
 
 ## 3. Method and its limits
 
@@ -73,14 +76,15 @@ assign studies to research questions, the column can be regenerated.
 
 ## 4. Before you publish — required actions
 
-1. **Verify the risk-of-bias worksheet.** Ratings were generated by reading each study's text
-   and are evidence-linked, but they are *not* the two-reviewer consensus the paper describes.
-   Either have both reviewers verify/override each row and set `rater_status` to `verified`,
-   or amend `brain_ieeetmi_v6.tex` §L753, which currently states *"No automated tool
-   contributed to a risk-of-bias rating."*
-2. **Reconcile Table VI and Table VII** against `DISCREPANCY_REPORT_v6.md`. The QUADAS-2
-   counts in the paper are substantially more favourable than the appraisal supports.
-3. **Decide on the six flagged non-reader studies**, which affect the n=36 denominator.
+1. ~~Verify the risk-of-bias worksheet.~~ **Done** — three reviewers, complete agreement,
+   recorded in the sign-off columns and in `Registration/reviewer_signoff/`.
+2. ~~Reconcile Table VI and Table VII against `DISCREPANCY_REPORT_v6.md`.~~ **Done** —
+   Table VII replaced with the appraised counts; Table VI's publication-period and
+   field-strength rows corrected; the "123 studies" claim resolved to 45.
+3. ~~Decide on the flagged non-reader studies.~~ **Done** — four reclassified (S107, S121,
+   S145, S179); S001 and S004 retained as genuine observer studies. Subset is n=32.
+4. ~~Decide what the non-QUADAS rows should say.~~ **Done** — the 153 rows now read
+   `n/a - evidence-linked extraction, not a rated appraisal`, which is what they are.
 
 ## 5. Reproducing
 

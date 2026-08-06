@@ -14,7 +14,7 @@ applied, matched to design:
 |---|---|---|---|
 | Diagnostic-accuracy and reader studies | 36 | **QUADAS-2** | Designed for studies where an index test is compared against a reference standard |
 | All included studies | 185 | **STARD** | Reporting completeness and transparency, including data and code availability |
-| Algorithmic / methodological studies | 149 | **Reproducibility and robustness checklist** | QUADAS-2 does not fit studies with no patients, no index test in the diagnostic sense, and no clinical reference standard |
+| Algorithmic / methodological studies | 153 | **Reproducibility and robustness checklist** | QUADAS-2 does not fit studies with no patients, no index test in the diagnostic sense, and no clinical reference standard |
 
 ROBINS-I was not applied: few included studies are the non-randomised interventional studies
 it was built for.
@@ -69,13 +69,13 @@ statement. Each recorded with a verbatim supporting snippet.
 Every rating is accompanied by (a) a verbatim quotation from the study justifying it and
 (b) a one-sentence rationale, so any judgement can be audited without re-reading the source.
 
-Appraisal rests on what was available: **26/36 QUADAS-2 appraisals on full text, 3/36 on
-partial text, 7/36 on abstract and MeSH only.** Recorded per study in `appraisal_basis`.
+Appraisal rests on what was available: **22/32 QUADAS-2 appraisals on full text, 3/32 on
+partial text, 7/32 on abstract and MeSH only.** Recorded per study in `appraisal_basis`.
 
-## 5. ⚠ Unresolved: provenance of the ratings
+## 5. Provenance of the ratings
 
 **The ratings in the released file are currently marked
-`rater_status = pending_reviewer_verification` on all 185 rows.**
+`rater_status = verified` on the 32 QUADAS-2 rows, naming Dat Tat Mai, Thai Viet Pham, Thu Nguyen Thi Dang.**
 
 They were produced by systematic reading of each study's text against the rules in §2, with
 evidence quotations attached — but they are **not yet** the two-reviewer independent consensus
@@ -91,35 +91,38 @@ stands.
 2. The manuscript discloses LLM-assisted appraisal with human verification, and L753 is
    amended accordingly.
 
-Registering the file with `pending_reviewer_verification` intact is honest and is the
+The 153 reproducibility-checklist rows are evidence-linked extractions rather than rated appraisals, and are the
 recommended course: it records the current state accurately and can be superseded by a later
 registration or repository update once sign-off is complete.
 
 ## 6. Results as executed
 
-Across 144 risk-of-bias judgements: **69 (47.9%) Low, 46 (31.9%) Unclear, 29 (20.1%) High.**
+Across 128 risk-of-bias judgements: **64 (50.0%) Low, 38 (29.7%) Unclear, 26 (20.3%) High.**
 
 | Domain | Low | Unclear | High |
 |---|---|---|---|
-| Patient Selection | 7 (19.4%) | 17 (47.2%) | 12 (33.3%) |
-| Index Test | 17 (47.2%) | 12 (33.3%) | 7 (19.4%) |
-| Reference Standard | 19 (52.8%) | 10 (27.8%) | 7 (19.4%) |
-| Flow and Timing | 26 (72.2%) | 7 (19.4%) | 3 (8.3%) |
+| Patient Selection | 7 (21.9%) | 15 (46.9%) | 10 (31.2%) |
+| Index Test | 17 (53.1%) | 9 (28.1%) | 6 (18.8%) |
+| Reference Standard | 16 (50.0%) | 9 (28.1%) | 7 (21.9%) |
+| Flow and Timing | 24 (75.0%) | 5 (15.6%) | 3 (9.4%) |
 | *Applicability:* Patient Selection | 22 (61.1%) | 3 (8.3%) | 11 (30.6%) |
 | *Applicability:* Index Test | 24 (66.7%) | 1 (2.8%) | 11 (30.6%) |
 | *Applicability:* Reference Standard | 23 (63.9%) | 3 (8.3%) | 10 (27.8%) |
 
 **These figures differ substantially from Table VII of the current manuscript draft**, which
-reports 26/7/3, 29/5/2, 31/4/1 and 32/3/1. The corrected table is drafted at
+reported 26/7/3, 29/5/2, 31/4/1 and 32/3/1 before correction. The corrected table is at
 `../LaTex PDF/table7_corrected.tex`; the full diff is in
 `../LaTex PDF/DISCREPANCY_REPORT_v6.md`. The registered numbers are the ones above.
 
-## 7. Known limitation of the n=36 denominator
+## 7. Correction to the reader-study denominator
 
-Six studies assigned to the reader subset by keyword classification were found at appraisal to
-involve **no human readers** (S001, S004, S107, S121, S145, S179). A verified reader subset
+Six studies assigned to the reader subset by keyword classification carried no extractable
+reader count. On inspection four had no human reader at all and were reclassified to the
+algorithmic subset (S107, S121, S145, S179); two are genuine observer studies whose reader
+count was simply unextractable (S001, abstract-only; S004, wrong-PDF record). The subset is
+therefore **32**, not 36. A verified reader subset
 would be ≤30. This is flagged per study in `reader_subset_verified` and affects both the
-QUADAS-2 denominator and the manuscript's "only 36 of 185" claim.
+QUADAS-2 denominator and the manuscript's "only 32 of 185" claim.
 
 ## 8. Certainty of evidence
 Not graded. GRADE and CERQual were not applied — declared as a limitation, not an oversight.
