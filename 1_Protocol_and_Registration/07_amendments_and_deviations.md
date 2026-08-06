@@ -90,7 +90,7 @@ The protocol did not specify how many human reviewers would screen independently
   a higher-capability model.
 - All 185 `include` decisions were verified against full text by the authors; exclusions were
   not all independently re-checked by a second human.
-- Risk-of-bias ratings are currently **`pending_reviewer_verification`** — see
+- Risk-of-bias ratings are **`verified`**: independently appraised by three reviewers with complete agreement — see
   `06_risk_of_bias_plan.md` §5.
 
 *Consequence.* No inter-rater reliability statistic can be computed, because there were not
@@ -106,12 +106,12 @@ Found while assembling the per-study release files; full detail in
 
 | # | Item | Manuscript | Data |
 |---|---|---|---|
-| C1 | QUADAS-2, all four domains | 26/7/3, 29/5/2, 31/4/1, 32/3/1 | 7/17/12, 17/12/7, 19/10/7, 26/7/3 |
-| C2 | Applicability concerns | ">85% Low" across domains | 61.1% / 66.7% / 63.9% Low |
+| C1 | QUADAS-2, all four domains | 26/7/3, 29/5/2, 31/4/1, 32/3/1 | 7/15/10, 17/9/6, 16/9/7, 24/5/3 (n=32) |
+| C2 | Applicability concerns | ">85% Low" across domains | 68.8% / 68.8% / 65.6% Low (n=32) |
 | C3 | Publication period split | 2020–22 n=78; 2023–26 n=82 | n=38; n=122 |
 | C4 | Studies reporting fidelity metrics | "123 studies" (×3 in body) | 45 (the manuscript's own Table VI figure) |
 | C5 | Full text obtained | "185/185 (100%)" | 142 full, 19 partial, 24 abstract-only |
-| C6 | Reader subset | n=36 | 6 of the 36 have no human readers |
+| C6 | Reader subset | n=36 | 4 had no human reader and were reclassified; subset is n=32 |
 | C7 | Data integrity | — | One wrong-PDF record (S004) found and quarantined |
 
 C1–C6 are reporting errors in the draft, not errors in the underlying review. Corrected
@@ -141,6 +141,6 @@ Replace `XXXXX` with the real DOI once minted.
 
 Also amend, in the same pass:
 - **L753** — the QUADAS-2 sentence, per `06_risk_of_bias_plan.md` §5 and §6.
-- **L842** — repeats the superseded 29/36, 31/36, 32/36 figures.
+- ~~**L842** — repeats the superseded 29/36, 31/36, 32/36 figures.~~ Corrected to the n=32 counts.
 - **L1322** — cites `protocol.md`, which does not exist; the files are `protocol.json` and
   `search_strategy.json`.

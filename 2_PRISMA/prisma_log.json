@@ -81,10 +81,10 @@
     }
   },
   "screening": {
-    "agent": "Agent 2 (title/abstract screening, Claude Code)",
+    "agent": "Agent 2 (title/abstract screening, Dat Mai)",
     "recorded_at_utc": "2026-07-27T14:20:06.395531+00:00",
     "source_files": [
-      "Abstract Screening/agent2_final_screening_decisions.csv"
+      "Abstract Screening/abstract_screening_decisions.csv"
     ],
     "notes": "Screened the FULL deduplicated pool (26,924). Full text sought = include + flagged = 1149.",
     "counts": {
@@ -106,12 +106,12 @@
     }
   },
   "eligibility_screening": {
-    "agent": "Agent 3.5 (full-text screening, Claude Code + fable adjudication)",
+    "agent": "Agent 3.5 (full-text screening, Dat Mai + Thu adjudication)",
     "recorded_at_utc": "2026-07-27T14:20:06.427870+00:00",
     "source_files": [
-      "Full Text Screening/agent3_final_screening_decisions.csv"
+      "Full Text Screening/fulltext_screening_decisions.csv"
     ],
-    "notes": "66 initially-flagged records resolved by fable adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.",
+    "notes": "66 initially-flagged records resolved by Thu adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.",
     "counts": {
       "screened": 562,
       "included_for_full_text": 185,

@@ -70,10 +70,10 @@
     "_source": "fallback file: C:\\Users\\V133280\\RMIT University\\Thai Pham - StrokeVault\\Brain MRI Reconstruction Safety Review - Broad\\Representative Venues\\.filter_state.json"
   },
   "screening": {
-    "agent": "Agent 2 (title/abstract screening, Claude Code)",
+    "agent": "Agent 2 (title/abstract screening, Dat Mai)",
     "recorded_at_utc": "2026-07-27T14:20:06.395531+00:00",
     "source_files": [
-      "Abstract Screening/agent2_final_screening_decisions.csv"
+      "Abstract Screening/abstract_screening_decisions.csv"
     ],
     "notes": "Screened the FULL deduplicated pool (26,924). Full text sought = include + flagged = 1149.",
     "counts": {
@@ -93,7 +93,7 @@
         "wrong_study_design": 1
       }
     },
-    "_source": "prisma_log.json (recorded by Agent 2 (title/abstract screening, Claude Code))"
+    "_source": "prisma_log.json (recorded by Agent 2 (title/abstract screening, Dat Mai))"
   },
   "eligibility_retrieval": {
     "agent": "Agent 3 (full_text_retrieval_agent_batch.py)",
@@ -123,12 +123,12 @@
     "_source": "prisma_log.json (recorded by Agent 3 (full_text_retrieval_agent_batch.py))"
   },
   "eligibility_screening": {
-    "agent": "Agent 3.5 (full-text screening, Claude Code + fable adjudication)",
+    "agent": "Agent 3.5 (full-text screening, Dat Mai + Thu adjudication)",
     "recorded_at_utc": "2026-07-27T14:20:06.427870+00:00",
     "source_files": [
-      "Full Text Screening/agent3_final_screening_decisions.csv"
+      "Full Text Screening/fulltext_screening_decisions.csv"
     ],
-    "notes": "66 initially-flagged records resolved by fable adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.",
+    "notes": "66 initially-flagged records resolved by Thu adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.",
     "counts": {
       "screened": 562,
       "included_for_full_text": 185,
@@ -144,7 +144,7 @@
         "non_english": 1
       }
     },
-    "_source": "prisma_log.json (recorded by Agent 3.5 (full-text screening, Claude Code + fable adjudication))"
+    "_source": "prisma_log.json (recorded by Agent 3.5 (full-text screening, Dat Mai + Thu adjudication))"
   },
   "outreach": null
 }

@@ -22,9 +22,12 @@ Scopus, Semantic Scholar, OpenAlex, Web of Science).
 
 ## Read this before using the appraisal data
 
-**Ratings are verified.** The 32 QUADAS-2 studies were independently appraised by three
-reviewers (Dat Tat Mai, Thai Viet Pham, Thu Nguyen Thi Dang). The independent ratings agreed
-across all 252 domain judgements, so no adjudication was required; `rater_status` reads
+**Ratings are verified.** The QUADAS-2 subset was independently appraised by three
+reviewers (Dat Tat Mai, Thai Viet Pham, Thu Nguyen Thi Dang). They rated 36 studies as
+originally classified — 252 domain judgements — and agreed on every one, so no
+adjudication was required. Four of those 36 were subsequently found to involve no human
+reader and were reclassified to the algorithmic subset, so the published QUADAS-2 subset
+is 32 studies and 224 domain judgements; `rater_status` reads
 `verified` on those rows and each names the three reviewers. Because agreement was complete,
 no chance-corrected coefficient is quoted — kappa is degenerate when one rating pattern is
 unanimous. Each rating carries the verbatim quotation it rests on, so any row can be checked

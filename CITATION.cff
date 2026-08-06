@@ -8,8 +8,17 @@ abstract: >-
 authors:
   - family-names: Mai
     given-names: Dat T.
-    affiliation: RMIT University
+    affiliation: "School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam"
     # orcid: "https://orcid.org/TODO"
+  - family-names: Pham
+    given-names: Thai V.
+    affiliation: "School of Computing Technologies, RMIT University, Melbourne, VIC, Australia"
+  - family-names: Dang
+    given-names: Thu N. T.
+    affiliation: "School of Health and Biomedical Science, RMIT University, Melbourne, VIC, Australia"
+  - family-names: Kang
+    given-names: James Jin
+    affiliation: "School of Science, Engineering & Technology, RMIT University Vietnam, Ho Chi Minh City, Vietnam"
 license: CC-BY-4.0
 keywords:
   - systematic review
@@ -18,5 +27,5 @@ keywords:
   - image reconstruction
   - deep learning
   - risk of bias
-# repository-code: "https://github.com/TODO/brain-mri-recon-safety-slr"
+repository-code: "https://github.com/dmai287/brain-mri-recon-safety-slr"
 # preferred-citation:  # add DOI once the article is published
