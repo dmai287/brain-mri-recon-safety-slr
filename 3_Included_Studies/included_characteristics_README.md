@@ -77,8 +77,8 @@ assign studies to research questions, the column can be regenerated.
 ## 4. Before you publish — required actions
 
 1. ~~Verify the risk-of-bias worksheet.~~ **Done** — three reviewers, complete agreement,
-   recorded in the sign-off columns and in `Registration/reviewer_signoff/`.
-2. ~~Reconcile Table VI and Table VII against `DISCREPANCY_REPORT_v6.md`.~~ **Done** —
+   recorded in the sign-off columns and in `1_Protocol_and_Registration/reviewer_signoff/`.
+2. ~~Reconcile Table VI and Table VII against the manuscript.~~ **Done** —
    Table VII replaced with the appraised counts; Table VI's publication-period and
    field-strength rows corrected; the "123 studies" claim resolved to 45.
 3. ~~Decide on the flagged non-reader studies.~~ **Done** — four reclassified (S107, S121,

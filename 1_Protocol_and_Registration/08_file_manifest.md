@@ -137,6 +137,6 @@ Registering the top-level OSF project captures all child components in one regis
 - [x] `MANIFEST.csv` regenerated — every size and SHA-256 prefix current
 - [ ] `TODO-INSERT-OSF-DOI` replaced in `0_Manuscript/manuscript_source.tex` (line 1332)
 - [ ] `<COMMIT-SHA>` and Zenodo DOI replaced in the same file (line 1334)
-- [ ] Contributor emails added in `01_registration_metadata.md` (the `_add_` cells)
+- [ ] Thu Nguyen Thi Dang's ORCID added in `01_registration_metadata.md` (the last `_add_` cell; the other three are recorded)
 - [ ] GitHub repository created and verified live, or the code component cited instead
 - [ ] Project set **public** before registering
