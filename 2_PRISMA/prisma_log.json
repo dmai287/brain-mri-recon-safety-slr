@@ -1,0 +1,177 @@
+{
+  "identification": {
+    "agent": "Agent 1 (prisma_counts.py)",
+    "recorded_at_utc": "2026-07-24T03:23:08.195774+00:00",
+    "source_files": [
+      "prisma_identification.json",
+      "Dedup/agent1_deduplication_report.csv"
+    ],
+    "notes": "",
+    "counts": {
+      "identified_total": 27327,
+      "records_per_source": {
+        "PubMed": 24693,
+        "IEEE Xplore": 778,
+        "Springer": 1598,
+        "Semantic Scholar": 66,
+        "Scopus": 127,
+        "Web of Science": 31,
+        "OpenAlex": 34
+      },
+      "preprint_total": 0,
+      "published_total": 27327,
+      "preprints_per_source": {},
+      "reported_hits": {
+        "IEEE Xplore": 778,
+        "OpenAlex": 50,
+        "Scopus": 127,
+        "Semantic Scholar": 66,
+        "Springer": 1598,
+        "Web of Science": 31,
+        "PubMed": 24693
+      },
+      "duplicates_removed": 403,
+      "duplicates_per_source": {
+        "PubMed": 203,
+        "IEEE Xplore": 91,
+        "Scopus": 87,
+        "Web of Science": 22
+      },
+      "unique_records": 26924,
+      "dedup_actions": {
+        "keep_unique": 26924,
+        "exclude_duplicate": 403
+      },
+      "dedup_run_date": "2026-07-24",
+      "sources": [
+        "PubMed",
+        "Scopus",
+        "Web of Science",
+        "IEEE Xplore",
+        "OpenAlex",
+        "Semantic Scholar",
+        "Springer"
+      ]
+    }
+  },
+  "eligibility_retrieval": {
+    "agent": "Agent 3 (full_text_retrieval_agent_batch.py)",
+    "recorded_at_utc": "2026-07-27T14:20:06.121320+00:00",
+    "source_files": [
+      "Full Text Screening\\agent3_retrieval_counts.json"
+    ],
+    "notes": "Counts below are the final tally; the single agent run recorded at 2026-07-27T14:20Z is preserved under counts.intermediate_batch. [merged from Full Text Screening/prisma_log.json]",
+    "counts": {
+      "full_text_sought": 1149,
+      "full_text_retrieved_and_assessed": 727,
+      "not_retrieved": 422,
+      "basis": "Final tally after the original retrieval passes and the 2026-08-07 post-registration round. Reconciles with abstract_screening_decisions.csv (1,040 flagged + 109 include = 1,149 sought), with fulltext_screening_decisions.csv (562 rows) plus fulltext_screening_decisions_round2.csv (169 rows, 165 unique), and with the PRISMA figure in the manuscript.",
+      "intermediate_batch": {
+        "recorded_at_utc": "2026-07-27T14:20:06.121320+00:00",
+        "note": "One run of full_text_retrieval_agent_batch.py over the Include and Flagged folders as they stood at that time. Superseded by later retrieval passes; retained for provenance. pdf_files/html_files/package_files count files on disk, not record statuses, which is why pdf_files (288) exceeds retrieved_pdf (274).",
+        "mode": "execute",
+        "input_folders": [
+          "Brain MRI Reconstruction Safety Review - Broad\\Abstract Screening\\Include",
+          "Brain MRI Reconstruction Safety Review - Broad\\Abstract Screening\\Flagged"
+        ],
+        "screened_for_retrieval": 929,
+        "status_counts": {
+          "missing_full_text": 654,
+          "retrieved_pdf": 274,
+          "retrieved_pdf_html_package": 1
+        },
+        "pdf_files": 288,
+        "html_files": 2,
+        "package_files": 1,
+        "full_text_embedded": 1,
+        "missing_full_text": 654
+      },
+      "post_registration_retrieval": {
+        "date": "2026-08-07",
+        "retrieved": 169,
+        "newly_assessed": 165,
+        "re_retrievals_confirming_prior_decision": 4,
+        "not_retrieved_reasons": {
+          "pmc_embargoed_release_2026_10_to_2027_07": 9,
+          "title_not_licensed_to_institution": 1,
+          "open_access_flagged_but_no_accessible_copy": 1,
+          "no_open_access_copy_and_no_subscription_access": 411
+        },
+        "note": "Post-registration retrieval round (2026-08-07): of the 587 records not retrieved at the original pass, open-access copies were located via Unpaywall/NCBI and 169 full texts were obtained (165 not previously assessed + 4 re-retrievals of records assessed on partial text, whose original decisions were confirmed unchanged). The 422 still not retrieved: 9 are PMC-embargoed (public release 2026-10-28 to 2027-07-01), 1 title is not licensed to RMIT (Karger), 1 open-access-flagged record had no locatable accessible copy, and the remainder have no open-access copy and no institutional subscription access."
+      }
+    }
+  },
+  "screening": {
+    "agent": "Agent 2 (title/abstract screening, Dat Mai)",
+    "recorded_at_utc": "2026-07-27T14:20:06.395531+00:00",
+    "source_files": [
+      "Abstract Screening/abstract_screening_decisions.csv"
+    ],
+    "notes": "Screened the FULL deduplicated pool (26,924). Full text sought = include + flagged = 1149.",
+    "counts": {
+      "screened": 26924,
+      "included_for_abstract_screening": 109,
+      "excluded_at_abstract_screening": 25573,
+      "flagged_for_human_review": 1040,
+      "background_or_citation_tracking_only": 202,
+      "reason_counts": {
+        "wrong_intervention_or_index": 11627,
+        "wrong_population": 9128,
+        "out_of_scope": 4305,
+        "review_editorial_protocol_commentary": 370,
+        "wrong_outcome": 79,
+        "insufficient_information": 57,
+        "non_english": 6,
+        "wrong_study_design": 1
+      }
+    }
+  },
+  "eligibility_screening": {
+    "agent": "Agent 3.5 (full-text screening, Dat Mai + Thu adjudication)",
+    "recorded_at_utc": "2026-07-27T14:20:06.427870+00:00",
+    "source_files": [
+      "Full Text Screening/fulltext_screening_decisions.csv"
+    ],
+    "notes": "66 initially-flagged records resolved by Thu adjudication (0 remain flagged); 7 records carry needs_human_review within decided categories. Corrupted full text (2 wrong-PDF + 90 boilerplate/thin) cleaned before finalisation.",
+    "counts": {
+      "screened": 727,
+      "included_for_full_text": 220,
+      "excluded_at_full_text": 491,
+      "flagged_for_human_review": 0,
+      "background_or_citation_tracking_only": 16,
+      "reason_counts": {
+        "out_of_scope": 179,
+        "wrong_intervention_or_index": 196,
+        "wrong_outcome": 57,
+        "wrong_population": 51,
+        "wrong_study_design": 4,
+        "non_english": 1,
+        "review_editorial_protocol_commentary": 3
+      },
+      "screening_round2": {
+        "screened": 169,
+        "include": 36,
+        "exclude": 131,
+        "background_only": 2,
+        "unique_new_include": 35,
+        "unique_new_exclude": 128,
+        "note": "Second full-text screening round (2026-08-07): the 169 newly retrieved full texts were screened against the same PICOS criteria (decisions in fulltext_screening_decisions_round2.csv; 10 flagged records adjudicated). Outcomes: 36 include (35 new + 1 previously included, confirmed), 131 exclude (128 new + 3 previously excluded, confirmed), 2 background_only. Final full-text tallies: 727 assessed, 220 included, 491 excluded on PICOS, 16 background_only."
+      }
+    }
+  },
+  "venue_filter": {
+    "agent": "Agent 1 (filter_representative_venues.py)",
+    "recorded_at_utc": "2026-07-27T14:23:35.395315+00:00",
+    "source_files": [
+      "Representative Venues/.filter_state.json"
+    ],
+    "notes": "SENSITIVITY ANALYSIS ONLY — not applied as a screening gate. Title/abstract screening screened the FULL deduplicated pool (26,924), not this 11,075 subset.",
+    "counts": {
+      "records_evaluated": 26924,
+      "records_matched": 11075,
+      "records_excluded_non_representative_venue": 15849,
+      "records_currently_on_disk": 11075,
+      "source_folder": "Brain MRI Reconstruction Safety Review - Broad\\Dedup"
+    }
+  }
+}

@@ -1,0 +1,289 @@
+[
+ {
+  "key": "S186",
+  "design": "retrospective single-centre reader study of DL image-domain artifact correction for synthetic (MDME) FLAIR, evaluated against separately acquired conventional FLAIR with quantitative metrics plus blinded ratings by three neuroradiologists",
+  "n_readers": 3,
+  "n_subjects": 23,
+  "patient_selection": {
+   "rating": "Low",
+   "evidence": "We retrospectively collected images of 86 subjects who underwent a synthetic MRI scan with a 3 T MRI scanner with 24-channel phased array head coils (GE Discovery 750 W, GE Healthcare, Milwaukee, WI) over a consecutive period",
+   "rationale": "Consecutive-period retrospective collection of all subjects scanned with the synthetic MRI protocol, with a clinical-indication cohort spanning abnormal and unremarkable cases; the six exclusions for severe motion were explained."
+  },
+  "index_test": {
+   "rating": "Low",
+   "evidence": "three board-certified neuroradiologists (J.J., 10 years experience, J.C., 10 years experience, and H.L., 12 years experience) separately and blindly rated the three different images",
+   "rationale": "Readers scored DL-corrected, uncorrected synthetic, and conventional FLAIR separately and blindly using prespecified 5-point quality and artifact scoring criteria (Table 1), limiting reader bias in the index-test interpretation."
+  },
+  "reference_standard": {
+   "rating": "Low",
+   "evidence": "For the label images, we fed the preprocessed separately acquired conventional FLAIR images.",
+   "rationale": "The reference is a separately acquired standard-of-care conventional FLAIR from the same session, an appropriate truth for artifact-correction fidelity, and qualitative interpretation was blinded; it was not derived from the index-test images."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "Of the 86 subjects, six subjects were excluded from the dataset due to high motion errors.",
+   "rationale": "All subjects received both the synthetic MDME and conventional FLAIR acquisitions in the same examination (effectively zero interval), the full test set (N=23) was analysed, and the only exclusions were explained (motion/registration failure)."
+  },
+  "app_patient_selection": {
+   "rating": "Low",
+   "evidence": "A total of 80 subjects with clinical indications (60.6 ± 16.7 years, 38 males, 42 females) were divided into three groups",
+   "rationale": "Clinically indicated adult brain MRI patients including 40 cases with imaging abnormalities (stroke, hemorrhage, neoplasm, degenerative disease), matching the review's clinically-relevant human brain MRI population."
+  },
+  "app_index_test": {
+   "rating": "High",
+   "evidence": "In this study, a deep learning (DL)-based synthetic FLAIR method was developed, which does not require analytical modeling of the signal.",
+   "rationale": "The index test is image-domain correction of synthetically generated FLAIR contrast (a synthesis/post-processing task), not reconstruction from undersampled k-space, so it is mismatched with the review's reconstruction-safety question."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "A separate scan of the conventional 2D axial FLAIR (here dubbed \"conventional FLAIR\") was obtained",
+   "rationale": "The separately acquired conventional FLAIR is the clinical standard-of-care sequence, a clinically relevant reference for judging whether the DL output preserves or removes true pathology."
+  }
+ },
+ {
+  "key": "S193",
+  "design": "retrospective multi-dataset development and validation of automated motion-artifact quality-control classifiers (end-to-end 3D CNN vs IQM-based SVM) for T1w brain MRI, referenced to clinical-usability labels from five radiologists",
+  "n_readers": 5,
+  "n_subjects": 1615,
+  "patient_selection": {
+   "rating": "High",
+   "evidence": "We randomly selected 500 MRI scans from OASIS-3 and 500 “unusable” (as determined by the UK Biobank team) and 500 “usable” images from UK Biobank.",
+   "rationale": "Sampling was purposive and pathology/artifact-enriched: UK Biobank images were deliberately selected by prior quality label, OASIS-3 cases were chosen to balance demented and healthy subjects, and MR-ART volunteers performed instructed head nodding, so the sample does not reflect a consecutive or random clinical stream."
+  },
+  "index_test": {
+   "rating": "High",
+   "evidence": "For each model, the parameters (either from the median or the maximum validation balanced accuracy fold) that resulted in the highest test set balanced accuracy were kept.",
+   "rationale": "Checkpoint retention and final model selection (including choosing 3D-CNN-v2 and SVM-v1 for the headline comparison) used test-set performance, so the index-test threshold/configuration was not fully prespecified independently of the evaluation data, risking optimistic estimates."
+  },
+  "reference_standard": {
+   "rating": "Low",
+   "evidence": "The STAND, HM1, and HM2 images from the MR-ART dataset were rated similarly to the images from other datasets regardless of the condition, as the radiologists were blind to the acquisition condition.",
+   "rationale": "The reference was expert visual rating by five radiologists with senior revision and consensus discussion, performed blind to acquisition condition and before/independent of the model outputs, which is an acceptable truth standard for clinical usability."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "It was ensured that subjects with multiple images appeared either in the training or the test set, but not in both.",
+   "rationale": "All labeled images received the same radiologist reference standard applied to the identical scans (zero interval), the full disjoint test set (N=411) was analysed, and the few missing scans (8 participants' HM1/HM2 acquisitions) were explained."
+  },
+  "app_patient_selection": {
+   "rating": "High",
+   "evidence": "the majority of the scans used in our study were obtained from public datasets where precise imaging protocols were strictly followed, yielding overall better-quality images than those obtained in routine clinical examinations.",
+   "rationale": "The cohort combines public research databases (UK Biobank, OASIS-3) and healthy volunteers with deliberately induced motion, rather than a routine clinical brain-MRI population, limiting applicability to the review's clinically-relevant setting."
+  },
+  "app_index_test": {
+   "rating": "High",
+   "evidence": "In the present study, we investigated the relative advantage of the two methods in structural MRI quality control.",
+   "rationale": "The index test is an automatic motion-artifact detection/quality-control classifier applied to conventionally acquired images, not a deep-learning reconstruction from undersampled k-space, so it is mismatched with the review's reconstruction-evaluation question."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "Each record was rated on a 3-point scale based on image quality from the point of view of clinical diagnostic use.",
+   "rationale": "Radiologist judgement of clinical diagnostic usability is a clinically relevant reference construct that matches how reconstruction/image safety would be adjudicated in practice."
+  }
+ },
+ {
+  "key": "S194",
+  "design": "technical development and validation of a robust deep-generative-prior (untrained Deep Decoder) slice-to-volume reconstruction with diffeomorphic registration for whole-body fetal MRI, validated by synthetic/ablation experiments, LOOCV image metrics, single-radiologist paired preference rating, and a gestational-age prediction task",
+  "n_readers": 1,
+  "n_subjects": 72,
+  "patient_selection": {
+   "rating": "Unclear",
+   "evidence": "We have tested our reconstruction algorithm in a cohort of 72 fetal cases consented as participants in the iFIND project",
+   "rationale": "The cohort mixes controls, suspected abnormalities, and incidental findings, but how the 72 cases were sampled from the iFIND project (consecutive, random, or purposive) and any inclusion/exclusion rules are not described."
+  },
+  "index_test": {
+   "rating": "Unclear",
+   "evidence": "A radiologist with 11 years’ experience in fetal MRI was asked to select the higher quality image in each of three orthogonal pairs of matched slices extracted around the center of the trunk FOV from DSVR and RGDSVR.",
+   "rationale": "Blinding of the single reader to which method produced each image in the paired comparison is not reported, and several reconstruction hyperparameters were visually tuned on the same cohort, so independence of the index-test interpretation cannot be confirmed."
+  },
+  "reference_standard": {
+   "rating": "High",
+   "evidence": "The reconstruction with minimum data corruption as assessed by the average Normalized Cross Correlation (NCC) of adjacent input slices [11] is used as a synthetic GT",
+   "rationale": "No independent truth exists: the synthetic ground truth and the LOOCV agreement target are derived from the motion-corrupted acquired data and reconstructions themselves (incorporation bias), and the radiological assessment was a reference-free preference rating."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "Results of Peak SNR (PSNR), in dB, NCC and Structural SIMilarity Index (SSIM) are shown for all 72 cases in our cohort.",
+   "rationale": "All 72 cases were retrospectively reprocessed with every compared reconstruction method on the same acquisitions (zero interval, same reference procedure), and the radiologist preference covered all 72 cases (62 + 10) with no unexplained exclusions."
+  },
+  "app_patient_selection": {
+   "rating": "High",
+   "evidence": "Magnetic resonance imaging of whole fetal body and placenta is limited by different sources of motion affecting the womb.",
+   "rationale": "The population is fetal whole-body/placenta MRI at 20-36 weeks gestation, not the adult or clinical brain-MRI population targeted by the review; the fetal brain appears only as a secondary ROI for gestational-age prediction."
+  },
+  "app_index_test": {
+   "rating": "Unclear",
+   "evidence": "we propose a deep generative prior for robust volumetric reconstructions integrated with a diffeomorphic volume to slice registration method",
+   "rationale": "The index test is a genuine DL-regularized reconstruction with hallucination-relevant generative prior, so it is task-relevant to reconstruction safety, but it is slice-to-volume motion-compensated reconstruction of the fetal body rather than reconstruction of undersampled k-space brain data."
+  },
+  "app_reference_standard": {
+   "rating": "High",
+   "evidence": "lack of GT makes direct comparison of methods very challenging",
+   "rationale": "The surrogate references used (NCC-selected synthetic ground truth, held-out corrupted stacks, and clinical-record gestational age acknowledged as error-prone) do not constitute a clinically relevant diagnostic truth standard for reconstruction safety."
+  }
+ },
+ {
+  "key": "S199",
+  "design": "Retrospective single-center technical study: DL harmonization of DWI (Attention U-Net contrast adjustment + REDNet super-resolution) evaluated with quantitative fidelity metrics (PSNR/SSIM, GLCM, PSD, Dice on 84 lesions) under single-radiologist oversight; no formal multi-reader study",
+  "n_readers": 1,
+  "n_subjects": null,
+  "patient_selection": {
+   "rating": "Unclear",
+   "evidence": "The inclusion criteria were adult subjects who underwent MRI scans with diffusion-weighted images (DWIs). Exclusion criteria included subjects with artifacts in the images and incomplete imaging data.",
+   "rationale": "Inclusion/exclusion criteria are stated but consecutive or random sampling is not described, and pathology cases were removed from the main harmonization dataset, suggesting a purposive normal-enriched sample."
+  },
+  "index_test": {
+   "rating": "High",
+   "evidence": "An experienced, board-certified radiologist evaluated the effectiveness of restoring high-resolution T2WI and harmonizing diverse DWI with metrics such as PSNR and SSIM",
+   "rationale": "The only human evaluation was by a single unblinded reader who is a study author, with reference/original images visible; no acceptability thresholds (e.g., for Dice) were prespecified."
+  },
+  "reference_standard": {
+   "rating": "Low",
+   "evidence": "Various low-resolution images were created by down-sampling the high-resolution T2WIs in the dataset.",
+   "rationale": "Ground truth is known by construction: degradations were synthetically applied to acquired originals, and lesion reproducibility (Dice) was measured against the original acquired images."
+  },
+  "flow_timing": {
+   "rating": "Unclear",
+   "evidence": "Cases with abnormally high signals indicating conditions such as stroke, tumor, or inflammation and those with space-occupying lesions were excluded from the study.",
+   "rationale": "Retrospective processing of the same acquisitions gives zero interval, but pathology was excluded from the main analysis and evaluated only in a separate 84-image set, and artifact/incomplete-data exclusion counts are not reported."
+  },
+  "app_patient_selection": {
+   "rating": "Low",
+   "evidence": "The MRI data were obtained from a diverse patient population aged 20 years and older.",
+   "rationale": "Adult clinical brain MRI cohort across seven scanners from four vendors matches the human brain MRI setting of the review, though the main dataset under-represents pathology."
+  },
+  "app_index_test": {
+   "rating": "High",
+   "evidence": "we have developed a method that preprocesses all images to produce high-quality input data, thereby reducing diversity.",
+   "rationale": "The intervention is image-domain harmonization/super-resolution preprocessing of already-reconstructed images, not reconstruction from undersampled k-space, so it is clearly mismatched to the review's index test."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "the Dice coefficient for reproducing high-signal abnormalities in transformed images was above 0.74 for all 84 analyzed lesions, including high-intensity strokes and tumors",
+   "rationale": "Using original acquired images and known synthetic degradations as truth is an appropriate fidelity reference for the safety question, including lesion-preservation assessment."
+  }
+ },
+ {
+  "key": "S202",
+  "design": "Retrospective GAN synthesis study: three Pix2Pix-GAN models generate missing T1WI/T2WI/FLAIR for brain tumor (LGG vs HGG) classification; three-reader real-vs-fake visual Turing test on 81 images; internal test set plus independent BraTS 2019 external test",
+  "n_readers": 3,
+  "n_subjects": null,
+  "patient_selection": {
+   "rating": "Unclear",
+   "evidence": "We retrospectively collected MRI data of 224 patients with brain tumors who were scanned at the Tel Aviv Sourasky Medical Center between 2008 and 2021.",
+   "rationale": "Retrospective single-institution collection with stated inclusion criteria, but consecutive/random sampling is not reported, and how the 81 reader-test images were selected is not described."
+  },
+  "index_test": {
+   "rating": "Low",
+   "evidence": "The readers were asked to label each image as generated or real image.",
+   "rationale": "The real-vs-fake judgment is blinded by design (readers do not know which images are synthetic), and quantitative evaluation used a held-out internal test set plus a fully independent public dataset (BraTS)."
+  },
+  "reference_standard": {
+   "rating": "Low",
+   "evidence": "The PSNR and SSIM measures were extracted in order to evaluate the similarity between the generated and true images.",
+   "rationale": "Truth is defined by the actually acquired sequences (independent of the generative model) for synthesis fidelity, and by established tumor-grade labels for classification, avoiding incorporation bias."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "Exclusion criteria were: substantial imaging artifacts, as detected by visual assessment (36 patients excluded).",
+   "rationale": "All sequences come from the same retrospective examinations (zero interval), the same reference applies to all cases, and exclusions (36 for artifacts) are reported and explained."
+  },
+  "app_patient_selection": {
+   "rating": "Low",
+   "evidence": "The MRI data were acquired during patients’ routine clinical assessments, at different sites, with different MRI vendors and systems, and with various acquisition parameters",
+   "rationale": "Clinically acquired brain tumor MRI from routine assessments plus the multi-institutional BraTS dataset matches the human brain, clinically relevant setting."
+  },
+  "app_index_test": {
+   "rating": "High",
+   "evidence": "Three image-to-image translation generative-adversarial-network (Pix2Pix-GAN) models were trained on the local-dataset, to generate T1WI, T2WI, and FLAIR images.",
+   "rationale": "The index method is cross-contrast image synthesis (image-to-image translation) to replace missing sequences, not reconstruction from undersampled k-space, so it is clearly mismatched to the review's index test."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "The similarity between the generated and the original images was evaluated using the peak-signal-to-noise-ratio (PSNR) and the structural-similarity-index-measure (SSIM).",
+   "rationale": "Comparing synthetic images against the truly acquired counterpart sequences is an appropriate and clinically relevant fidelity reference for this task."
+  }
+ },
+ {
+  "key": "S213",
+  "design": "Prospective single-center clinical feasibility pilot of an automated slice-to-volume reconstruction (SVR) pipeline for fetal brain MRI at 1.5T; 22 pregnant women; two pediatric neuroradiologists rated SVR vs standard-of-care 2D T2-SSFSE on 5-point scales",
+  "n_readers": 2,
+  "n_subjects": 22,
+  "patient_selection": {
+   "rating": "High",
+   "evidence": "enrolled nonconsecutive pregnant women undergoing clinical fetal MRI examinations at Cincinnati Childrens’ Hospital Medical Center imaged for suspected brain anomalies",
+   "rationale": "Explicitly nonconsecutive enrollment, with SVR sequences added at the clinical radiologist's discretion based on indication, scheduling, and patient tolerance - a discretionary convenience sample prone to selection bias."
+  },
+  "index_test": {
+   "rating": "High",
+   "evidence": "This study was also subject to bias given the cohort selection process, lack of radiologist blinding to the type of images viewed",
+   "rationale": "Readers were unblinded to whether they viewed SVR or SOC images, and SVR images were reviewed shortly after the SOC acquisition and review, allowing expectation bias in the ratings."
+  },
+  "reference_standard": {
+   "rating": "High",
+   "evidence": "the ability of 3D SVR to reproduce pathology seen on SOC (1 ¼ poor, 5 ¼ excellent)",
+   "rationale": "Truth for pathology reproduction is defined by the SOC images as read unblinded by the same readers in side-by-side comparison, with no independent verification - incorporation-type bias in the reference interpretation."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "Reconstruction was completed successfully in all cases.",
+   "rationale": "SOC and SVR input stacks were acquired within the same examination (effectively zero interval), reconstruction succeeded in all 22 patients, and all were included in the image-quality analysis (44 evaluations); the single PACS transfer lapse affected only source images."
+  },
+  "app_patient_selection": {
+   "rating": "Low",
+   "evidence": "Only single-gestation pregnancies undergoing the fetal brain malformation clinical MRI examination protocol were selected.",
+   "rationale": "Human fetal brain MRI in a routine clinical diagnostic workflow, including 68% with intracranial anomalies, is a clinically relevant brain MRI population, albeit a specialized one."
+  },
+  "app_index_test": {
+   "rating": "Unclear",
+   "evidence": "Slice-to-volume reconstruction (SVR) is used to generate 3D isotropic high-resolution MR images from multiple 2D stacks to correct for fetal motion.",
+   "rationale": "SVR is genuine volumetric reconstruction (motion-corrected super-resolution from acquired 2D slices) but is registration/model-based rather than DL reconstruction from undersampled k-space; deep learning mainly automates brain localization/masking, so the match to the review's index test is partial."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "In addition to standard of care (SOC), which includes 2D T2-single-shot fast spin echo (SSFSE) contiguous images at 3–4 mm slice thickness",
+   "rationale": "A separately acquired standard-of-care clinical sequence is a clinically relevant comparator for assessing whether the reconstructed volumes preserve diagnostic content."
+  }
+ },
+ {
+  "key": "S216",
+  "design": "Prospective single-center intra-individual paired comparison at 0.55 T: DL variational-network reconstruction of undersampled k-space MPRAGE vs standard parallel-imaging MPRAGE in 30 patients; quantitative SNR/CNR plus blinded three-reader 5-point Likert assessment",
+  "n_readers": 3,
+  "n_subjects": 30,
+  "patient_selection": {
+   "rating": "Unclear",
+   "evidence": "Thirty adult patients (mean age: 66 ± 13.6 years; 18 males, 12 females) undergoing clinically indicated MRI of the brain were prospectively enrolled between September 3, 2024, and November 22, 2024.",
+   "rationale": "Prospective enrollment of clinically indicated brain MRI patients irrespective of diagnosis, but consecutive or random sampling within the recruitment window is not stated."
+  },
+  "index_test": {
+   "rating": "Low",
+   "evidence": "All radiologists were blinded to the reconstruction technique (standard vs. DL).",
+   "rationale": "Three independent readers of varying experience rated images blinded to reconstruction type using predefined criteria, and the network was trained on separate 1.5T/3T volunteer datasets, precluding test-data leakage; residual concern is possible de facto recognizability of the higher-resolution DL images and low inter-reader ICC."
+  },
+  "reference_standard": {
+   "rating": "Low",
+   "evidence": "Each patient underwent two consecutive acquisitions during a single session. The first scan was the routinely used 3D sagittal T1-weighted MPRAGE sequence using a standard parallel imaging reconstruction.",
+   "rationale": "The separately acquired standard-of-care MPRAGE serves as the comparator and was interpreted blind to the index reconstruction; however no fully sampled ground truth of the accelerated acquisition exists, so fine-scale fidelity errors cannot be fully excluded."
+  },
+  "flow_timing": {
+   "rating": "Low",
+   "evidence": "Only cases with complete paired measurements for both the standard and the DL-based reconstruction were included in the analysis. All 30 patients met this criterion and were included.",
+   "rationale": "Both acquisitions were performed consecutively in the same session (zero interval), the same comparator applied to all, and all 30 enrolled patients were analyzed with no exclusions."
+  },
+  "app_patient_selection": {
+   "rating": "Low",
+   "evidence": "Patients were included irrespective of their underlying neurological diagnosis",
+   "rationale": "Adult patients undergoing clinically indicated brain MRI on a clinical low-field system directly match the review's human brain, clinically relevant setting."
+  },
+  "app_index_test": {
+   "rating": "Low",
+   "evidence": "a DL-based reconstruction generated from undersampled k-space data using a variational-network architecture",
+   "rationale": "This is exactly the review's index test: deep-learning reconstruction of undersampled k-space brain MRI deployed prospectively on the scanner in routine clinical use."
+  },
+  "app_reference_standard": {
+   "rating": "Low",
+   "evidence": "comparing DL-reconstructed MPRAGE with standard MPRAGE using comparable acquisition geometry and timing parameters.",
+   "rationale": "A same-session standard-of-care MPRAGE with matched geometry and timing is a clinically relevant reference for judging the safety and quality of the DL reconstruction."
+  }
+ }
+]
