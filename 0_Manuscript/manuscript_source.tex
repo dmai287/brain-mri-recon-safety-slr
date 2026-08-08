@@ -25,7 +25,7 @@
 
 \begin{document}
 
-\title{The Metric Blind Spot in Deep Learning-Based Brain MRI Reconstruction: A Systematic Review and Causal Safety Framework}
+\title{The Metric Blind Spot in Deep Learning-Based Brain MRI Reconstruction: A Systematic Review}
 
 \author{Dat~Tat~Mai,
         Thai~Viet~Pham,
@@ -43,11 +43,11 @@
 \maketitle
 
 \begin{abstract}
-Deep learning-based reconstruction can shorten brain MRI acquisition four- to tenfold, but the learned priors that make this possible can erase or invent diagnostic detail while conventional quality scores remain high. We call this the \emph{metric blind spot}: the inability of standard image-quality metrics such as peak signal-to-noise ratio (PSNR) and structural similarity (SSIM) to detect reconstruction errors with clinically significant consequences, because voxel-averaged fidelity is insensitive to localized, structured change. This systematic review consolidates what 220 primary studies (1995--2026), identified across seven databases and appraised with QUADAS-2, establish about the safety, artifacts, and fidelity of deep learning-based brain MRI reconstruction. Three findings emerge. First, PSNR and SSIM track radiologist judgment poorly: reported rank correlations span 0.32 to 0.54, reconstructions above 34 decibels have been reported with acute ischemic lesions under 5 cubic millimetres erased, and reader sensitivity fell from 91.3 to 72.5 percent at sixfold acceleration. Second, four mathematical mechanisms explain the blind spot: spatial averaging of focal error, insensitivity of similarity losses to lesion suppression, adversarial rewards for plausible rather than genuine texture, and reliance on a registered reference that motion invalidates. Third, evaluation practice rarely permits the comparison that matters: only 15 of 220 studies pair a pixel-wise metric with a reader assessment on the same data. Building on this evidence --- and as our own proposal rather than a review finding --- we set out a physics-grounded causal auditing framework and a five-phase pre-deployment safety checklist, neither yet validated.
+Deep learning-based reconstruction can shorten brain MRI acquisition four- to tenfold, but the learned priors that make this possible can erase or invent diagnostic detail while conventional quality scores remain high. We call this the \emph{metric blind spot}: the inability of standard image-quality metrics such as peak signal-to-noise ratio (PSNR) and structural similarity (SSIM) to detect reconstruction errors with clinically significant consequences, because voxel-averaged fidelity is insensitive to localized, structured change. This systematic review consolidates what 220 primary studies (1995--2026), identified across seven databases and appraised with QUADAS-2, establish about the safety, artifacts, and fidelity of deep learning-based brain MRI reconstruction. Three findings emerge. First, PSNR and SSIM track radiologist judgment poorly: reported rank correlations span 0.32 to 0.54, reconstructions above 34 decibels have been reported with acute ischemic lesions under 5 cubic millimetres erased, and reader sensitivity fell from 91.3 to 72.5 percent at sixfold acceleration. Second, four mathematical mechanisms explain the blind spot: spatial averaging of focal error, insensitivity of similarity losses to lesion suppression, adversarial rewards for plausible rather than genuine texture, and reliance on a registered reference that motion invalidates. Third, evaluation practice rarely permits the comparison that matters: only 15 of 220 studies pair a pixel-wise metric with a reader assessment on the same data. Building on this evidence --- and as our own proposal rather than a review finding --- we set out a physics-grounded causal auditing framework --- the Causal Safety Audit (CSA) --- with a five-phase pre-deployment checklist, neither yet validated.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Brain MRI, Accelerated Reconstruction, Deep Learning, Image Reconstruction, Reconstruction Safety, Artifacts, Hallucination, Image Quality Assessment, Observer Studies, Uncertainty Estimation, Diffusion Models, PRISMA 2020, Systematic Review
+Brain MRI, Accelerated Reconstruction, Deep Learning, Image Reconstruction, Reconstruction Safety, Artifacts, Hallucination, Image Quality Assessment, Observer Studies, Uncertainty Estimation, Diffusion Models, Causal Safety Audit, PRISMA 2020, Systematic Review
 \end{IEEEkeywords}
 
 \begin{figure*}[t]
@@ -1147,7 +1147,7 @@ Vision-language models used as automated safety observers are an appealing idea 
 \subsection{Author-Proposed Conceptual Roadmap: Structural Causal Auditing and Pre-Deployment Safety Checklist}
 \label{sec:scm_proposed}
 
-This section is a proposal, not a result. Drawing on causal imaging work outside reconstruction \cite{pawlowski2020deep,castro2020causality,sanchez2022healthy,peng2026latent}, we set out a structural causal model and a pre-deployment checklist for auditing reconstruction without depending on a registered reference. Both are ours: a forward-looking roadmap for future benchmarking and audit design rather than a finding of the review or an existing standard. No included study evaluated the framework as formulated here, no part of it has been prospectively validated, and it carries no consensus or regulatory backing.
+This section is a proposal, not a result. Drawing on causal imaging work outside reconstruction \cite{pawlowski2020deep,castro2020causality,sanchez2022healthy,peng2026latent}, we set out a structural causal model and a pre-deployment checklist for auditing reconstruction without depending on a registered reference; together we call them the \emph{Causal Safety Audit} (CSA). Both are ours: a forward-looking roadmap for future benchmarking and audit design rather than a finding of the review or an existing standard. No included study evaluated the framework as formulated here, no part of it has been prospectively validated, and it carries no consensus or regulatory backing.
 
 A review that also advances a framework can easily blur the line between what it found and what it proposes. Table~\ref{tab:provenance} therefore states where each element of this paper comes from, and Fig.~\ref{fig:evidence_flow} shows the same division in graphical form.
 

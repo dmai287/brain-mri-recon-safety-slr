@@ -153,8 +153,7 @@ against complete text with no change.
 Following co-author review of the submission draft, the manuscript front matter was revised
 for clarity:
 
-- **Title:** "…in Deep Learning Brain MRI Reconstruction…" → "…in Deep Learning-**Based**
-  Brain MRI Reconstruction…" (grammatical fix to the noun compound; topic unchanged).
+- **Title:** revised in two steps: “…Deep Learning…” → “…Deep Learning-**Based**…” (grammatical fix), then shortened to “The Metric Blind Spot in Deep Learning-Based Brain MRI Reconstruction: A Systematic Review” (17 → 13 words; “and Causal Safety Framework” dropped from the title). The framework itself is unchanged and is now named in-text — the *Causal Safety Audit* (CSA) — in the abstract, at its introduction in the proposal section, and in the keyword list, so it remains independently discoverable without being headlined as a review finding.
 - **Abstract** compressed from ~350 to ~230 words. Deduplication counts, the
   narrative-synthesis rationale, PROSPERO status, the publication-bias limitation, and the
   funding note were moved out of the abstract; all remain reported in the Methods, Threats
