@@ -147,6 +147,33 @@ all downstream tallies); prevalence counts remain reported as lower bounds. The 
 re-retrievals strengthen the original record: decisions made on partial text were re-verified
 against complete text with no change.
 
+### D6 — Editorial revisions to title, abstract, and research-question wording (2026-08-08)
+**Status:** after registration submission · **Impact: editorial — no change to scope, criteria, methods, or corpus**
+
+Following co-author review of the submission draft, the manuscript front matter was revised
+for clarity:
+
+- **Title:** "…in Deep Learning Brain MRI Reconstruction…" → "…in Deep Learning-**Based**
+  Brain MRI Reconstruction…" (grammatical fix to the noun compound; topic unchanged).
+- **Abstract** compressed from ~350 to ~230 words. Deduplication counts, the
+  narrative-synthesis rationale, PROSPERO status, the publication-bias limitation, and the
+  funding note were moved out of the abstract; all remain reported in the Methods, Threats
+  to Validity, and Funding Statement sections, so the PRISMA 2020 abstract items are now
+  reported in the body rather than the abstract itself.
+- An explicit definition of the title concept (**"metric blind spot"**) was added to the
+  abstract and the Introduction, and the Introduction's citation clusters were thinned for
+  readability (no claim left uncited; all removed citations remain cited elsewhere in the
+  manuscript or were context-only).
+- **RQ1 and RQ2** were reworded to name deep learning-based reconstruction explicitly,
+  matching the title ("…in deep learning-based accelerated brain MRI"; "…in deep
+  learning-based reconstruction"). **RQ3**'s parenthetical elaboration sentence
+  ("Specifically, what do the included studies establish…") was removed as redundant with
+  the RQ3 results section; the question itself is unchanged in substance.
+
+The registered protocol (`protocol.json`) and the OSF registration form retain the
+pre-revision wording; this entry records the divergence. Eligibility criteria, the search,
+all screening and appraisal decisions, and the 220-study corpus are untouched.
+
 ## 3. Corrections to reported results identified during preparation
 
 Found while assembling the per-study release files; full detail in
@@ -176,16 +203,16 @@ The passage at `brain_ieeetmi_v6.tex` **L334–338** should be replaced. Suggest
 > (`protocol.json`, `search_strategy.json`) on 23 July 2026, before screening began on 27 July
 > 2026. We did not register with PROSPERO, which excludes reviews without direct clinical
 > health outcomes. The review is registered retrospectively on the Open Science Framework
-> (DOI: 10.17605/OSF.IO/XXXXX), after completion; that registration is made to place the
+> (DOI: 10.17605/OSF.IO/EUXA8), after completion; that registration is made to place the
 > protocol, search strategy, per-study data, and deviation log on the public record, and we do
-> not present it as prospective registration. Five deviations from the protocol as first
+> not present it as prospective registration. Six deviations from the protocol as first
 > written are documented in the registered amendments log: the LLM-as-Judge concept was
 > dropped from the required search terms to widen recall; preprints were excluded rather than
 > admitted; a venue filter was computed but not used to restrict screening; and the protocol
 > did not specify a reviewer count, so what the released decision files record for screening
 > and appraisal is set out in full there.
 
-Replace `XXXXX` with the real DOI once minted.
+Registration DOI: 10.17605/OSF.IO/EUXA8.
 
 Also amend, in the same pass:
 - **L753** — the QUADAS-2 sentence, per `06_risk_of_bias_plan.md` §5 and §6.

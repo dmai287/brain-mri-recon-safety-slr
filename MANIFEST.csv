@@ -1,7 +1,7 @@
 component,file,bytes,source_path_in_review,sha256_16
 ,.gitignore,369,,43716aad4fbda14a
-0_Manuscript,0_Manuscript/manuscript_brain_mri_reconstruction_safety_review.pdf,1183280,,9cc1df6131432530
-0_Manuscript,0_Manuscript/manuscript_source.tex,154940,,e297580910d4cd22
+0_Manuscript,0_Manuscript/manuscript_brain_mri_reconstruction_safety_review.pdf,1184517,,14fabb718071391e
+0_Manuscript,0_Manuscript/manuscript_source.tex,155643,,912718691b46fce5
 1_Protocol_and_Registration,1_Protocol_and_Registration/00_START_HERE.md,5620,Registration/00_START_HERE.md,4d938571491c196b
 1_Protocol_and_Registration,1_Protocol_and_Registration/01_registration_metadata.md,7301,Registration/01_registration_metadata.md,c48c6152c6e2267c
 1_Protocol_and_Registration,1_Protocol_and_Registration/02_protocol_PRISMA-P.md,10560,Registration/02_protocol_PRISMA-P.md,890a6217d028802f
@@ -9,7 +9,7 @@ component,file,bytes,source_path_in_review,sha256_16
 1_Protocol_and_Registration,1_Protocol_and_Registration/04_eligibility_criteria.md,5909,Registration/04_eligibility_criteria.md,0113c3f5358fa285
 1_Protocol_and_Registration,1_Protocol_and_Registration/05_data_extraction_form.md,4879,Registration/05_data_extraction_form.md,41482e4701238770
 1_Protocol_and_Registration,1_Protocol_and_Registration/06_risk_of_bias_plan.md,7536,Registration/06_risk_of_bias_plan.md,b377d473a1eec54a
-1_Protocol_and_Registration,1_Protocol_and_Registration/07_amendments_and_deviations.md,11528,Registration/07_amendments_and_deviations.md,1be46304944355aa
+1_Protocol_and_Registration,1_Protocol_and_Registration/07_amendments_and_deviations.md,13438,Registration/07_amendments_and_deviations.md,59a90720262833a1
 1_Protocol_and_Registration,1_Protocol_and_Registration/08_file_manifest.md,8656,,50f4c4a0a3ce8c13
 1_Protocol_and_Registration,1_Protocol_and_Registration/ie_criteria.yaml,6710,,63c139d53b52e4b7
 1_Protocol_and_Registration,1_Protocol_and_Registration/protocol.json,7573,protocol.json,37ee7a52f8ff0a71
@@ -41,6 +41,6 @@ component,file,bytes,source_path_in_review,sha256_16
 4_Screening_Decisions,4_Screening_Decisions/fulltext_screening_decisions_round2.csv,195991,,71c87a013254ff6d
 5_Code,5_Code/assemble.py,12838,LaTex PDF/scripts/assemble.py,69b0771afc8f670b
 5_Code,5_Code/prep_corpus.py,7372,LaTex PDF/scripts/prep_corpus.py,8ab621424e2e0f17
-,CITATION.cff,1578,,39fbd3397e229165
+,CITATION.cff,1584,,e9aa7a69c3ce97ec
 ,LICENSE,606,,a652bd66b1ffb16d
 ,README.md,4885,,5672ce54bd3df669
