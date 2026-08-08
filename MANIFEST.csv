@@ -1,7 +1,7 @@
 component,file,bytes,source_path_in_review,sha256_16
 ,.gitignore,369,,43716aad4fbda14a
-0_Manuscript,0_Manuscript/manuscript_brain_mri_reconstruction_safety_review.pdf,1184473,,297caf421b506810
-0_Manuscript,0_Manuscript/manuscript_source.tex,155728,,7af1088f9f412faa
+0_Manuscript,0_Manuscript/manuscript_brain_mri_reconstruction_safety_review.pdf,1184621,,7ad59ce2d3fbb944
+0_Manuscript,0_Manuscript/manuscript_source.tex,155806,,a993c1e5bed5d6ea
 1_Protocol_and_Registration,1_Protocol_and_Registration/00_START_HERE.md,5620,Registration/00_START_HERE.md,4d938571491c196b
 1_Protocol_and_Registration,1_Protocol_and_Registration/01_registration_metadata.md,7301,Registration/01_registration_metadata.md,c48c6152c6e2267c
 1_Protocol_and_Registration,1_Protocol_and_Registration/02_protocol_PRISMA-P.md,10560,Registration/02_protocol_PRISMA-P.md,890a6217d028802f
