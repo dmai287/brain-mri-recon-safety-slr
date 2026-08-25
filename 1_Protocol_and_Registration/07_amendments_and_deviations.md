@@ -173,6 +173,96 @@ The registered protocol (`protocol.json`) and the OSF registration form retain t
 pre-revision wording; this entry records the divergence. Eligibility criteria, the search,
 all screening and appraisal decisions, and the 220-study corpus are untouched.
 
+### D7 — Author-proposed framework moved to a companion paper (2026-08-08)
+**Status:** after registration · **Impact: editorial packaging — no change to scope, criteria, decisions, or corpus**
+
+On co-author and internal-review advice, the manuscript was restructured into two
+papers. This review now ends where its evidence ends: the RQ3 synthesis closes with
+five derived requirements for safety-oriented evaluation (R1–R5), each traced to
+corpus evidence, and the author-proposed Causal Safety Audit (structural causal model,
+counterfactual workflow, null-space audit component, and five-phase pre-deployment
+checklist) was removed from the review manuscript for development and empirical
+evaluation in a separate methods paper.
+
+Also added in the same revision: descriptive analytics computed from the released
+per-study file (evaluation practice by publication era and by method family;
+pixel-metric co-occurrence), reported as lower bounds. No new screening, extraction,
+or appraisal was performed; the analytics reuse the released
+`included_characteristics.csv` fields only.
+
+The registered protocol is unaffected: the framework was never a protocol element,
+and RQ1–RQ3, the eligibility criteria, the search, all screening and appraisal
+decisions, and the 220-study corpus are unchanged.
+
+### D8 — Second post-lock retrieval round: OpenAthens library sweep (2026-08-19/20)
+**Status:** after registration · **Impact: high — recovers 341 of the 422 unretrieved reports**
+
+Working publisher by publisher through the institution's OpenAthens subscriptions, and
+repeating the open-access, preprint, PubMed Central and Crossref checks, full texts were
+obtained for 341 of the 422 candidates that had resisted every earlier route
+(`Full Text Screening/PDF-Retrieved-ALL/Recovered_from_NotRetrieved_341/`). The 81 reports
+that remain unobtainable carry a recorded per-report reason
+(`download_failure_reasons.csv`): 53 title-level subscription gaps across nineteen
+publishers, 13 per-chapter Springer conference chapters, 4 ISMRM web-page abstracts with
+no PDF, 4 citations resolving to whole proceedings volumes or front matter, and 7 records
+with no DOI and no locatable source.
+
+In the same round, full text was recovered and identity-verified (title-token and
+DOI-in-text checks, stamped in each note) for 15 of the 20 included studies previously
+assessed on abstract-level or partial text (S004, S020, S023, S027, S034, S068, S099,
+S105, S113, S115, S142, S151, S182, S185, S200); their `full_text_basis` is now
+`full text`. Corpus basis is 259 full / 1 partial / 4 abstract-only. Field strength was
+filled from the recovered full text where previously `not reported`, each with a verbatim
+evidence snippet (S004, S020, S023, S034, S099, S113, S182).
+
+### D9 — Screening of the 341 recovered reports; 44 studies added post-lock (2026-08-20)
+**Status:** after registration · **Impact: high — changes the included-study count (220 → 264)**
+
+The 341 recovered reports were screened at full text against the unchanged registered
+PICOS criteria. Outcomes (decision log: `agent3_final_screening_decisions.csv`, stage
+`fulltext_recovered341`): 295 exclude (294 on PICOS; 1 adjudicated a duplicate --- the
+arXiv preprint of the already included SISMIK study, `10.1109/tmi.2024.3446450`, its
+note quarantined in `Full Text Screening/_duplicate_quarantine/`), 2 background_only,
+44 include. Resulting corpus: **264 included studies** (was 220);
+assessed reports 1,068; full-text tallies 786 excluded (785 PICOS + 1 duplicate),
+18 background_only.
+
+**Disclosure.** Screening of this round and the characteristics extraction for the 44
+additions were AI-assisted (Claude, Anthropic), as declared in the manuscript. Every
+decision and every extracted label is released with its verbatim supporting evidence
+(`extension_44_evidence.csv`, `verify_44_evidence.csv`); reader-study and field-strength
+labels were additionally verified against strict full-text contextual patterns, with 12
+corrections applied and logged. The three named reviewers' independent confirmation of
+the 44 include decisions and the QUADAS-2 appraisal of the 18 reader-design additions
+are **pending** and scheduled before submission; until then every appraisal tally in the
+manuscript is computed on the registered corpus only, and the additions carry
+`rater_status = pending` in the released files.
+
+**Method note.** The original keyword-classification rule file for
+`method_family`/`evaluation`/`failure_modes` could not be rerun byte-identically; a
+reconstructed rule set was validated against the registered corpus's frozen labels
+(micro-averaged F1 0.85; per-label precision/recall released) and then applied to the 44
+additions on title+abstract, with full text used for field strength and pulse sequences,
+mirroring the registered method. Reference-standard vocabulary and dataset-name casing
+were harmonised to the registered vocabulary across the merged file; the pre-merge file
+is preserved as `included_characteristics.csv.bak-pre264`.
+
+**Knock-on records updated in this round:** `included_characteristics.csv` and
+`included_characteristics_supplement.csv` extended to 264 rows (S221–S264 appended;
+S001–S220 unchanged except the D8 basis/field-strength fills, reviewer sign-off
+preserved); `venue_community_classification.csv` regenerated over 264 (clinical 131,
+engineering 78, general 38, unclassified 17); both data figures regenerated; the RAG
+index rebuilt over the 264 notes (7,545 chunks). Every corpus-level count in the
+manuscript changes (220 → 264 and downstream); prevalence counts remain lower bounds.
+
+**Missingness finding.** The screening outcome converts the former non-retrieval
+limitation into a measured quantity: 86.2% of the recovered reports were ineligible on
+the registered criteria, so the 422-report non-retrieval figure overstated the missing
+eligible evidence roughly sevenfold, and the eligible remainder was concentrated in
+subscription clinical journals, raising the 2023–2026 reader-assessment share from 18.0%
+to 22.9%. The direction of the missingness bias was conservative: it had suppressed
+reader-study evidence.
+
 ## 3. Corrections to reported results identified during preparation
 
 Found while assembling the per-study release files; full detail in
@@ -204,7 +294,7 @@ The passage at `brain_ieeetmi_v6.tex` **L334–338** should be replaced. Suggest
 > health outcomes. The review is registered retrospectively on the Open Science Framework
 > (DOI: 10.17605/OSF.IO/EUXA8), after completion; that registration is made to place the
 > protocol, search strategy, per-study data, and deviation log on the public record, and we do
-> not present it as prospective registration. Six deviations from the protocol as first
+> not present it as prospective registration. Seven deviations from the protocol as first
 > written are documented in the registered amendments log: the LLM-as-Judge concept was
 > dropped from the required search terms to widen recall; preprints were excluded rather than
 > admitted; a venue filter was computed but not used to restrict screening; and the protocol

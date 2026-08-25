@@ -131,3 +131,18 @@ flowchart TD
 
 - Supplementary — author outreach for missing full text
 
+## Post-lock update (amendments log D8/D9, 2026-08-20)
+
+| Quantity | n |
+|---|---|
+| Reports recovered by the D8 OpenAthens sweep | 341 (of 422 unretrieved at lock) |
+| Still not retrieved (recorded reasons) | 81 |
+| D9 screening: excluded on PICOS | 294 |
+| D9 screening: background only | 2 |
+| D9 screening: include reports | 45 (44 unique studies; 1 arXiv preprint of an included study) |
+| **Assessed reports, total** | **1,068** |
+| **Included studies, total** | **264** (265 reports) |
+
+Screening of this round was AI-assisted, as disclosed in the manuscript's
+Declaration; decisions with evidence spans are in
+`4_Screening_Decisions/fulltext_screening_decisions_recovered341.csv`.

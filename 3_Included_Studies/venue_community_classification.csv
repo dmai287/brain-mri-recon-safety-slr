@@ -1,0 +1,265 @@
+study_key,pmid,doi,year,journal,venue_community,rule
+S001,9419562.0,10.1016/s1076-6332(05)80184-9,1995,Academic radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S002,,10.1109/42.387716,1995,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S003,,10.1109/isspit.2005.1577201,2005,"Proceedings of the Fifth IEEE International Symposium on Signal Processing and Information Technology, 2005.",engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S004,17117780.0,10.1109/tmi.2006.881374,2006,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S005,23218792.0,10.1016/j.mri.2012.09.009,2013,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S006,25143262.0,10.1002/jmri.24728,2015,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S007,26606457.0,10.1016/j.media.2015.10.012,2015,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S008,,10.1109/isbi.2016.7493412,2016,2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S009,26714794.0,10.1002/mrm.26080,2016,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S010,26140504.0,10.1002/mrm.25830,2016,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S011,28945803.0,10.1371/journal.pone.0184661,2017,PloS one,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S012,29769079.0,10.1186/s12880-018-0256-6,2018,BMC medical imaging,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S013,29520831.0,10.1002/mrm.27166,2018,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S014,,10.1109/prni.2018.8423948,2018,2018 International Workshop on Pattern Recognition in Neuroimaging (PRNI),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S015,29898715.0,10.1186/s12938-018-0514-4,2018,Biomedical engineering online,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S016,29408461.0,10.1016/j.neuroimage.2018.01.078,2018,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S017,30672166.0,10.3348/kjr.2017.0634,2019,Korean journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S018,31247254.0,10.1016/j.mri.2019.05.038,2019,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S019,30811739.0,10.1002/jmri.26693,2019,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S020,30523142.0,10.3174/ajnr.a5905,2019,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S021,30671618.0,10.1007/s00234-019-02160-w,2019,Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S022,30630834.0,10.3174/ajnr.a5927,2019,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S023,31045278.0,10.1002/mrm.27771,2019,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S024,30773331.0,10.1016/j.zemedi.2019.01.001,2019,Zeitschrift fur medizinische Physik,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S025,31946482.0,10.1109/embc.2019.8857125,2019,Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S026,32054615.0,10.3174/ajnr.a6436,2020,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S027,32890675.0,10.1016/j.mri.2020.08.025,2020,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S028,32408291.0,10.1088/1361-6560/ab9356,2020,Physics in medicine and biology,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S029,32299803.0,10.3174/ajnr.a6533,2020,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S030,33592248.0,10.1016/j.mri.2021.02.002,2021,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S031,33858820.0,10.3174/ajnr.a7091,2021,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S032,34911199.0,10.1016/j.nicl.2021.102896,2021,NeuroImage. Clinical,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S033,33810289.0,10.3390/s21072314,2021,"Sensors (Basel, Switzerland)",engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S034,34824098.0,10.3174/ajnr.a7358,2021,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S035,32963184.0,10.2463/mrms.tn.2020-0061,2021,Magnetic resonance in medical sciences : MRMS : an official journal of Japan Society of Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S036,,10.1038/s41598-020-80930-w,2021,Scientific Reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S037,34455242.0,10.1016/j.neuroimage.2021.118482,2021,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S038,33502667.0,10.1007/s10334-020-00906-9,2021,"Magma (New York, N.Y.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S039,32783339.0,10.1002/mrm.28446,2021,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S040,,10.1109/tmi.2021.3075856,2021,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S041,33460797.0,10.1016/j.neuroimage.2021.117756,2021,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S042,34698294.0,10.3390/tomography7040047,2021,"Tomography (Ann Arbor, Mich.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S043,33368705.0,10.1002/nbm.4461,2021,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S044,36240989.0,10.1016/j.neuroimage.2022.119680,2022,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S045,,10.1109/tci.2022.3176129,2022,IEEE Transactions on Computational Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S046,35925387.0,10.1007/s00330-022-08871-8,2022,European radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S047,35291425.0,10.1155/2022/6270700,2022,Contrast media & molecular imaging,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S048,36651242.0,10.12122/j.issn.1673-4254.2022.12.02,2022,Nan fang yi ke da xue xue bao = Journal of Southern Medical University,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S049,35644448.0,10.1016/j.mri.2022.05.016,2022,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S050,36523647.0,10.1148/ryai.210313,2022,Radiology. Artificial intelligence,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S051,35618420.0,10.3174/ajnr.a7531,2022,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S052,34851499.0,10.1007/s11604-021-01225-2,2022,Japanese journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S053,35046218.0,10.6009/jjrt.780108,2022,Nihon Hoshasen Gijutsu Gakkai zasshi,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S054,35180675.0,10.1016/j.media.2022.102387,2022,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S055,35657830.0,10.1109/tmi.2022.3179981,2022,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S056,35403237.0,10.1002/mrm.29238,2022,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S057,36103561.0,10.1371/journal.pone.0274576,2022,PloS one,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S058,,10.1002/nbm.4616,2022,NMR in Biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S059,,10.1038/s41598-022-22778-w,2022,Scientific Reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S060,,10.1109/tmi.2022.3142610,2022,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S061,34166181.0,10.1109/tbme.2021.3091881,2022,IEEE transactions on bio-medical engineering,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S062,31865624.0,10.1002/nbm.4225,2022,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S063,34882551.0,10.1109/tmi.2021.3134496,2022,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S064,37384951.0,10.1016/j.media.2023.102872,2023,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S065,36702502.0,10.3174/ajnr.a7777,2023,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S066,,10.1007/s00062-023-01261-7,2023,Clinical Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S067,,10.48550/arxiv.2305.00088,2023,arXiv.org,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S068,37797482.0,10.1016/j.media.2023.102942,2023,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S069,36433748.0,10.1002/mp.16119,2023,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S070,36867912.0,10.1016/j.media.2023.102744,2023,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S071,37125656.0,10.1002/mrm.29684,2023,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S072,37058493.0,10.1371/journal.pone.0284440,2023,PloS one,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S073,37237139.0,10.1038/s41598-023-35794-1,2023,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S074,37284977.0,10.1007/s12021-023-09635-5,2023,Neuroinformatics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S075,36106429.0,10.1002/nbm.4831,2023,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S076,37010811.0,10.1002/mrm.29647,2023,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S077,37784039.0,10.1186/s12880-023-01109-z,2023,BMC medical imaging,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S078,36856903.0,10.1007/s10278-022-00697-6,2023,Journal of digital imaging,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S079,37394534.0,10.1186/s41747-023-00351-y,2023,European radiology experimental,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S080,,10.1007/978-3-031-46914-5_23,2023,Shape in Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S081,,10.1007/978-3-031-43999-5_47,2023,Medical Image Computing and Computer Assisted Intervention – MICCAI 2023,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S082,37285247.0,10.1109/tmi.2023.3283948,2023,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S083,38167996.0,10.1002/mp.16918,2024,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S084,,10.1038/s41598-024-59705-0,2024,Scientific Reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S085,,10.1109/access.2024.3408840,2024,IEEE Access,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S086,38400805.0,10.1002/jmri.29308,2024,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S087,38009996.0,10.1002/mrm.29937,2024,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S088,,10.3174/ajnr.a8143,2024,American Journal of Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S089,39434010.0,10.1186/s12880-024-01463-6,2024,BMC medical imaging,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S090,39455814.0,10.1038/s41598-024-76592-7,2024,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S091,38621552.0,10.1016/j.mri.2024.04.013,2024,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S092,,10.48550/arxiv.2409.00807,2024,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S093,38342980.0,10.1002/mrm.30045,2024,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S094,38942939.0,10.1007/s10278-024-01184-w,2024,Journal of imaging informatics in medicine,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S095,,10.1109/cisp-bmei64163.2024.10906217,2024,"2024 17th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI)",engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S096,38760778.0,10.1186/s12880-024-01297-2,2024,BMC medical imaging,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S097,38462289.0,10.1016/j.artmed.2024.102798,2024,Artificial intelligence in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S098,,10.1109/tbme.2023.3300090,2024,IEEE Transactions on Biomedical Engineering,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S099,39349147.0,10.1016/j.neuroimage.2024.120865,2024,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S100,38102776.0,10.1002/mrm.29969,2024,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S101,38626138.0,10.1371/journal.pone.0301132,2024,PloS one,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S102,38758490.0,10.1007/s10334-024-01161-y,2024,"Magma (New York, N.Y.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S103,38376403.0,10.1148/radiol.231938,2024,Radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S104,38282270.0,10.1002/mrm.30018,2024,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S105,40035173.0,10.1002/mrm.30436,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S106,,10.1038/s41598-025-17993-0,2025,Scientific Reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S107,41395855.0,10.1002/mp.70197,2025,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S108,39887515.0,10.1002/mrm.30439,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S109,39316286.0,10.1007/s11604-024-01666-5,2025,Japanese journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S110,40596927.0,10.1186/s12880-025-01763-5,2025,BMC medical imaging,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S111,40493331.0,10.1007/s10334-025-01266-y,2025,"Magma (New York, N.Y.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S112,39832954.0,10.3174/ajnr.a8662,2025,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S113,40257058.0,10.1177/03000605251330578,2025,The Journal of international medical research,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S114,,10.1109/isbi60581.2025.10981000,2025,2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S115,40315626.0,10.1016/j.ejrad.2025.112123,2025,European journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S116,39080159.0,10.1007/s10278-024-01171-1,2025,Journal of imaging informatics in medicine,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S117,39566835.0,10.1016/j.mri.2024.110277,2025,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S118,40912664.0,10.1016/j.neuroimage.2025.121442,2025,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S119,40273728.0,10.1016/j.media.2025.103579,2025,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S120,39038956.0,10.3174/ajnr.a8424,2025,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S121,,10.1109/access.2025.3634749,2025,IEEE Access,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S122,39212832.0,10.1007/s10334-024-01200-8,2025,"Magma (New York, N.Y.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S123,,10.1007/s10916-025-02300-1,2025,Journal of Medical Systems,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S124,40065646.0,10.1002/mrm.30482,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S125,39898398.0,10.3348/kjr.2024.0701,2025,Korean journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S126,39690114.0,10.1002/jmri.29672,2025,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S127,40545734.0,10.1002/nbm.70079,2025,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S128,40112563.0,10.1016/j.compbiomed.2025.110005,2025,Computers in biology and medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S129,39834104.0,10.1002/mrm.30440,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S130,39947682.0,10.3174/ajnr.a8566,2025,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S131,39846325.0,10.1002/hbm.26806,2025,Human brain mapping,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S132,40691452.0,10.1038/s41598-025-08552-8,2025,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S133,40309965.0,10.1002/hbm.70080,2025,Human brain mapping,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S134,40679773.0,10.1007/s10334-025-01276-w,2025,"Magma (New York, N.Y.)",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S135,,10.1007/978-3-031-72744-3_19,2025,Deep Generative Models,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S136,,10.1101/2025.04.30.651598,2025,bioRxiv,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S137,40064110.0,10.1088/1361-6560/adbed4,2025,Physics in medicine and biology,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S138,,10.1038/s41598-025-31958-3,2025,Scientific Reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S139,39780631.0,10.3348/kjr.2024.0653,2025,Korean journal of radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S140,40312865.0,10.1002/mrm.30537,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S141,39589491.0,10.1007/s00247-024-06088-z,2025,Pediatric radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S142,40534142.0,10.1002/mrm.30604,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S143,40240759.0,10.1038/s41598-025-87224-z,2025,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S144,39316090.0,10.1007/s00234-024-03461-5,2025,Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S145,41061726.0,10.1088/1361-6560/ae1110,2025,Physics in medicine and biology,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S146,40457510.0,10.1002/mrm.30591,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S147,39552568.0,10.1002/mrm.30365,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S148,39159019.0,10.1109/tmi.2024.3446450,2025,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S149,40173320.0,10.1002/mrm.30489,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S150,,10.1109/icip55913.2025.11084355,2025,2025 IEEE International Conference on Image Processing (ICIP),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S151,39250435.0,10.1002/mrm.30255,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S152,39366765.0,10.3174/ajnr.a8526,2025,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S153,39607873.0,10.1002/mrm.30384,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S154,39824686.0,10.1016/j.zemedi.2024.12.001,2025,Zeitschrift fur medizinische Physik,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S155,39938896.0,10.2463/mrms.mp.2024-0098,2025,Magnetic resonance in medical sciences : MRMS : an official journal of Japan Society of Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S156,39567364.0,10.1002/mrm.30380,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S157,41376618.0,10.1002/hbm.70429,2025,Human brain mapping,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S158,,10.1038/s44172-025-00580-6,2026,Communications Engineering,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S159,41873533.0,10.1002/mrm.70358,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S160,41204061.0,10.1002/mrm.70132,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S161,,10.1007/978-3-032-05997-0_1,2026,"Perinatal, Preterm and Paediatric Image Analysis",unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S162,40432253.0,10.1002/mrm.30569,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S163,41039908.0,10.1002/mrm.70113,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S164,40955094.0,10.1002/mrm.70073,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S165,40961378.0,10.1002/mrm.70090,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S166,41958180.0,10.1002/nbm.70286,2026,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S167,41866419.0,10.1038/s41598-026-44834-5,2026,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S168,41925834.0,10.1007/s00330-026-12482-y,2026,European radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S169,,10.3389/fnins.2026.1817732,2026,Frontiers in Neuroscience,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S170,41489091.0,10.1002/jmri.70221,2026,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S171,42286078.0,10.1038/s41598-026-55397-w,2026,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S172,40931540.0,10.1002/mrm.70072,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S173,,10.3390/biomimetics11030175,2026,Biomimetics,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S174,,10.1109/tmi.2026.3654585,2026,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S175,41274083.0,10.1016/j.media.2025.103872,2026,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S176,,10.1007/978-3-032-05472-2_19,2026,Deep Generative Models,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S177,,10.1007/978-3-032-04937-7_27,2026,Medical Image Computing and Computer Assisted Intervention – MICCAI 2025,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S178,,10.1109/isbi61048.2026.11515815,2026,2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S179,,10.1109/tmi.2026.3705847,2026,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S180,,10.1007/978-3-032-05472-2_15,2026,Deep Generative Models,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S181,41477795.0,10.1109/tmi.2025.3650412,2026,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S182,,10.1038/s43856-026-01614-6,2026,Communications Medicine,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S183,41580445.0,10.1038/s41598-025-33162-9,2026,Scientific reports,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S184,,10.1007/s00062-026-01627-7,2026,Clinical Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S185,40891385.0,10.1002/mrm.70054,2026,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S186,30884007.0,10.1002/jmri.26712,2019,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S187,,10.1109/access.2020.2968395,2020,IEEE Access,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S188,32542779.0,10.1002/jmri.27255,2020,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S189,,10.1109/ojsp.2021.3100751,2021,IEEE Open Journal of Signal Processing,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S190,33039617.0,10.1016/j.neuroimage.2020.117366,2021,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S191,35753594.0,10.1016/j.neuroimage.2022.119411,2022,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S192,34863809.0,10.1016/j.neurad.2021.11.007,2022,Journal of neuroradiology = Journal de neuroradiologie,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S193,37263108.0,10.1016/j.media.2023.102850,2023,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S194,,10.1109/tmi.2022.3217725,2023,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S195,37976548.0,10.1088/1361-6560/ad0ddc,2023,Physics in medicine and biology,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S196,37010491.0,10.1002/mrm.29642,2023,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S197,37604079.0,10.1016/j.neunet.2023.08.004,2023,Neural networks : the official journal of the International Neural Network Society,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S198,38043105.0,10.1002/mp.16850,2024,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S199,37877463.0,10.1002/jmri.29088,2024,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S200,38808752.0,10.1002/nbm.5179,2024,NMR in biomedicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S201,37665773.0,10.1002/mp.16724,2024,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S202,37864370.0,10.1002/jmri.29072,2024,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S203,,10.1109/access.2024.3364699,2024,IEEE Access,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S204,39887812.0,10.1002/jmri.29682,2025,Journal of magnetic resonance imaging : JMRI,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S205,39424209.0,10.1016/j.mri.2024.110252,2025,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S206,39290071.0,10.1002/mrm.30278,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S207,40436128.0,10.1016/j.neuroimage.2025.121297,2025,NeuroImage,general_neuroscience,keyword match on journal title; see 5_Code/venue_classification.py
+S208,40915097.0,10.1016/j.cmpb.2025.109045,2025,Computer methods and programs in biomedicine,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S209,39847946.0,10.1016/j.compbiomed.2025.109660,2025,Computers in biology and medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S210,40275620.0,10.1002/mrm.30512,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S211,39233495.0,10.1002/mrm.30266,2025,Magnetic resonance in medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S212,40089979.0,10.1002/mp.17747,2025,Medical physics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S213,40639972.0,10.3174/ajnr.a8728,2025,AJNR. American journal of neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S214,,10.1007/s10586-026-06180-z,2026,Cluster Computing,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S215,40758495.0,10.1109/tmi.2025.3595421,2026,IEEE transactions on medical imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S216,41794343.0,10.1016/j.mri.2026.110656,2026,Magnetic resonance imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S217,40945172.0,10.1016/j.media.2025.103763,2026,Medical image analysis,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S218,,10.1109/tmi.2026.3673956,2026,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S219,,10.3390/magnetochemistry12010014,2026,MAGNETOCHEMISTRY,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S220,,10.1109/access.2026.3712275,2026,IEEE Access,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S221,,10.1117/12.845507,2010,SPIE Proceedings,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S222,,10.1002/jmri.25149,2016,Journal of Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S223,,10.1016/j.mri.2016.11.020,2017,Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S224,,10.1016/j.mri.2017.07.016,2017,Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S225,,10.1002/jmri.25970,2018,Journal of Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S226,,10.1007/s00330-019-06319-0,2019,European Radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S227,,10.1002/mrm.27894,2019,Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S228,,10.1109/lsp.2019.2961072,2019,IEEE Signal Processing Letters,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S229,,10.1109/tmi.2019.2896085,2019,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S230,,10.1016/j.mri.2020.05.002,2020,Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S231,,10.1109/tmi.2020.2987026,2020,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S232,,10.1002/mrm.28526,2021,Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S233,,10.1007/978-3-030-87234-2/46,2021,"MICCAI 2021, LNCS 12907",engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S234,,10.1109/embc46164.2021.9630596,2021,2021 43rd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S235,,10.1109/embc46164.2021.9630435,2021,2021 43rd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S236,,10.1007/s00234-022-03053-1,2022,Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S237,,10.1002/mrm.29314,2022,Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S238,,10.1016/j.jmr.2022.107301,2022,Journal of Magnetic Resonance,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S239,,10.1117/12.2622233,2022,Real-Time Image Processing and Deep Learning 2022,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S240,,10.1007/s00234-023-03212-y,2023,Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S241,,10.1007/s10334-023-01142-7,2023,"Magnetic Resonance Materials in Physics, Biology and Medicine",clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S242,,10.1109/tim.2024.3481545,2024,IEEE Transactions on Instrumentation and Measurement,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S243,,10.1109/tmi.2024.3523949,2024,IEEE Transactions on Medical Imaging,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S244,,10.1109/iccit62134.2024.10701250,2024,2024 3rd International Conference on Creative Communication and Innovative Technology (ICCIT),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S245,,10.1109/jbhi.2025.3586049,2025,IEEE Journal of Biomedical and Health Informatics,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S246,,10.1007/s00247-025-06314-2,2025,Pediatric Radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S247,,10.1109/conecct65861.2025.11306510,2025,"2025 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)",engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S248,,10.3174/ajnr.a8841,2025,American Journal of Neuroradiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S249,,10.1109/icicis66182.2025.11313176,2025,2025 Twelfth International Conference on Intelligent Computing and Information Systems (ICICIS),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S250,,10.1109/tbme.2025.3543403,2025,IEEE Transactions on Biomedical Engineering,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S251,,10.1007/978-981-96-6957-8/25,2025,"ICONIP 2024, CCIS 2285",unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S252,,10.1016/j.mri.2025.110427,2025,Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S253,,10.1016/j.ejrad.2025.112289,2025,European Journal of Radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S254,,10.1016/j.jmr.2025.107898,2025,Journal of Magnetic Resonance,unclassified,keyword match on journal title; see 5_Code/venue_classification.py
+S255,,10.1016/j.mri.2025.110463,2025,Magnetic Resonance Imaging,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S256,,10.1002/mrm.30271,2025,Magnetic Resonance in Medicine,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S257,,10.1016/j.ejrad.2025.112497,2026,European Journal of Radiology,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S258,,10.1007/s10278-026-02059-y,2026,Journal of Imaging Informatics in Medicine,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S259,,10.3174/ajnr.a8992,2026,AJNR Am J Neuroradiol,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S260,,10.1109/icici68773.2026.11580971,2026,2026 4th International Conference on Inventive Computing and Informatics (ICICI),engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S261,,10.3174/ajnr.a9140,2026,AJNR Am J Neuroradiol,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S262,,10.3174/ajnr.a9097,2026,AJNR Am J Neuroradiol,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py
+S263,,10.1016/j.bspc.2026.110600,2026,Biomedical Signal Processing and Control,engineering_methods,keyword match on journal title; see 5_Code/venue_classification.py
+S264,,10.3174/ajnr.a8977,2026,AJNR Am J Neuroradiol,clinical_imaging,keyword match on journal title; see 5_Code/venue_classification.py

@@ -95,3 +95,7 @@ python assemble.py        # build both CSVs + verify against the paper
 
 Prior version of the mis-named file is preserved as
 `included_characteristics_supplement.csv.orig-backup`.
+
+---
+
+**2026-08-20 (amendments log D8/D9):** both files extended to **264 rows** (S221–S264 appended; S001–S220 unchanged except full-text-basis and field-strength fills documented in D8). The post-lock additions' labels carry verbatim evidence in `extension_44_evidence.csv` and `verify_44_evidence.csv`; their screening decisions are in `../4_Screening_Decisions/fulltext_screening_decisions_recovered341.csv`. The 18 reader-design additions are `rater_status = pending` until the three-reviewer QUADAS-2 appraisal is completed.

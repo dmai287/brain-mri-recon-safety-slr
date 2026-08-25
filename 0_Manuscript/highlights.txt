@@ -1,0 +1,7 @@
+Highlights
+
+- PRISMA systematic review of 263 deep learning brain MRI reconstruction studies
+- Only 18 of 263 studies pair a fidelity metric with a reader on the same data
+- Erasing a 5 mm3 lesion moves global PSNR by roughly a thousandth of a decibel
+- Reader evaluation dropped from 32.4% to 18.2%, recovering to 20.7% in recent era
+- No public dataset in the corpus is curated for acute stroke or haemorrhage
