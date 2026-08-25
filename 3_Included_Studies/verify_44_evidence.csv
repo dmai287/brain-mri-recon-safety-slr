@@ -1,0 +1,47 @@
+﻿study_key,doi,claim,verbatim
+S221,10.1117/12.845507,reader study,"ple of almost any age. Medical Imaging 2010: Image Perception, Observer Performance, and Technology Assessment, edited by David J. Manning, Craig K."
+S222,10.1002/jmri.25149,reader study,"gradient echo (SPGR) sequences. In a series of blinded studies, three radiologists independently evaluated CS, PI (GRAPPA), and low-resolution imag"
+S222,10.1002/jmri.25149,field strength 3T,"ods: Raw k-space data were acquired from five healthy volunteers on a 3T scanner using a 32channel head coil using T2-FLAIR, FIESTA-C, ti"
+S223,10.1016/j.mri.2016.11.020,field strength 3T,"by input bSSFP datasets ac-<br>quired from human brain and knee at 3T, which were separately performed for two and four PC angles.<br>"
+S224,10.1016/j.mri.2017.07.016,field strength 3T,"so superior to the original BRISQUE in both T1W and T2W images on 3 T, but no significant difference for images on 1.5 T. The result"
+S225,10.1002/jmri.25970,reader study,"or the test set comprised of 20 patients with mixed indications, two neuroradiologists scored blindly and independently for the three postcontrast imag"
+S225,10.1002/jmri.25970,field strength 3T,"Enhancements Studies were performed on six different 1.5T and 3T MRI scanners (MR750, MR750w, Signa HDx; GE Healthcare, Waukesha, WI)"
+S226,10.1007/s00330-019-06319-0,field strength 3T,018) Fast high-resolution brain metabolite mapping on a clinical 3T MRI by accelerated 1HFID-MRSI and low-rank constrained reconstructio
+S227,10.1002/mrm.27894,field strength 7T,"diffusion tensor imaging using 2‐D navigated multishot SENSE EPI at 7 T. _Magn Reson Med_ . 2013;69:793–802. 45. Vedaldi A, Lenc K. ed"
+S229,10.1109/tmi.2019.2896085,field strength 7T,"e-based characteristics of the cerebellar cortex visualized with ultra-high field MRI,” _Neuroimage_ , vol. 172, pp. 1–8, May 2018. - [12] H. J."
+S230,10.1016/j.mri.2020.05.002,field strength 7T,tracking system for motion-corrected magnetic resonance imaging at 7T. Magn Reson Mater Physics Biol Med Dec 2012;25(6):443–53. - [9
+S231,10.1109/tmi.2020.2987026,reader study,"For qualitative comparison, a multi-reader study was conducted. 4 radiologists (E.T., D.M., J.C., M.W.) provided independent readings blinded t"
+S231,10.1109/tmi.2020.2987026,field strength 3T,"is study was performed in six separate sites using both 1.5T and 3T scanners (MR450w and MR750w, GE, Waukesha, WI, USA). The Institutional R"
+S232,10.1002/mrm.28526,field strength 3T,"ata were collected from both healthy subjects and tumor patients on a 3T Siemens Skyra scanner (Munich, Germany), with the approval from"
+S236,10.1007/s00234-022-03053-1,reader study,pairwise comparisons. The interobserver agreement between the two radiologists was evaluated using the weighted Cohen kappa ( _κ_ ) test. A _κ_
+S237,10.1002/mrm.29314,field strength 7T,"uction were acquired in two slices in the human brain ( _n_ = 6) at 7T. MRSI data were retrospectively undersampled for a 4×, 6×, and 7"
+S238,10.1016/j.jmr.2022.107301,field strength 3T,"2w) structural MRI images of healthy adults from a Siemens Skyra 3 T scanner with 32 coils. By ignoring the noise [41], let Y T1 and Y T2 den"
+S240,10.1007/s00234-023-03212-y,reader study,"the full width at half maximum (FWHM) of the septum pellucidum. Two radiologists assessed image noise, contrast, artifacts, blur, and the overall"
+S240,10.1007/s00234-023-03212-y,field strength 3T,tive analysis was performed on 34 patients who had undergone DWI using a 3 T MRI system with SR-DLR reconstruction based on k-space data in A
+S241,10.1007/s10334-023-01142-7,field strength 7T,"(2017) Model-based iterative reconstruction for single-shot EPI at 7T. Magn Reson Med 8(6):2250–2264 59. Holdsworth SJ, Skare S, New"
+S242,10.1109/tim.2024.3481545,field strength 3T,"rlsson, J. H. Jonsson, and T. Nyholm, “Quantifying the effect of 3T magnetic resonance imaging residual system distortions and patient-indu"
+S243,10.1109/tmi.2024.3523949,reader study,"20 × 320, TE = 1.29 ms, TR = 4.5 ms, and slice thickness = 3 mm. Two radiologists assessed the grades of motion artifacts. For subjective evaluati"
+S243,10.1109/tmi.2024.3523949,field strength 3T,"emens Healthineers, Germany), and 132 examinations were acquired on a 3T MR scanner (MAGNETOM Skyra, Siemens Healthineers, Germany). The"
+S246,10.1007/s00247-025-06314-2,reader study,blinded to the protocol details and participant identifiers. The readers evaluated the following image quality metrics using a 5-point Likert scale
+S246,10.1007/s00247-025-06314-2,field strength 1.5T,al (2023) Usefulness of deep learning-based noise reduction for 1.5 T MRI brain images. Clin Radiol 78:e13–e21 Pediatric Radiology (2025
+S248,10.3174/ajnr.a8841,reader study,"onal reconstruction. Image quality was independently assessed by 2 neuroradiologists by using a 5-point Likert scale, which included overall image qu"
+S248,10.3174/ajnr.a8841,field strength 7T,A8841 http://www.ajnr.org/content/46/11/2446 ORIGINAL RESEARCH ULTRA-HIGH-FIELD MRI/IMAGING OF EPILEPSY/DEMYELINATING DISEASES/INFLAMMATION/ INF
+S249,10.1109/icicis66182.2025.11313176,field strength 3T,"th Hospital, and the Institute of Psychiatry—using both 1.5T and 3T MRI scanners. Along with the volumetric images, the dataset includes"
+S250,10.1109/tbme.2025.3543403,field strength 7T,"reference (EMR) signals: Application to a rat glioma model at 4.7 tesla,” _Magn. Reson. Med._ , vol. 75, no. 1, pp. 137–149, 2016. - ["
+S251,10.1007/978-981-96-6957-8/25,field strength 3T,d diffusion-weighted images (DWI) for each subject were acquired using a 3T Siemens ‘Connectom’ Skyra scanner. The HARDI volumes were captur
+S252,10.1016/j.mri.2025.110427,reader study,"ngle clinical magnet, and the systematic review of the images by 2 radiologists assessing the potential use of AI-DCS in clinical practice. Ou"
+S253,10.1016/j.ejrad.2025.112289,reader study,", contrast-to-noise ratio (CNR), and septum slope were analyzed. Two radiologists evaluated the images for noise, contrast, artifacts, sharpness,"
+S253,10.1016/j.ejrad.2025.112289,field strength 7T,"rtele, Hippocampal Sclerosis in Temporal Lobe Epilepsy: Findings at 7 T, Radiology 261 (2011) 199–209, https://doi.org/10.1148/radiol.11"
+S254,10.1016/j.jmr.2025.107898,field strength 3T,"sup> , using an off-the-shelf 15-element knee coil on a clinical 3 T system (Siemens Magnetom Skyra) [55]. The dataset consists of 331 slice"
+S255,10.1016/j.mri.2025.110463,reader study,tion and image<br>sharpness. Visual evaluation using a fve-point Likert scale was also performed to assess perceived image quality.<br>I
+S255,10.1016/j.mri.2025.110463,field strength 3T,vided super-resolution DLR method (Precise IQ Engine) on a<br>Canon 3 T MRI scanner using an edge phantom and clinical brain images from
+S257,10.1016/j.ejrad.2025.112497,reader study,"was performed for non-trained target b-values (b = 75, b = 850): two radiologists with over five years of diagnostic experience scored the clarity"
+S258,10.1007/s10278-026-02059-y,reader study,"same participant were shown simultaneously in random order, and readers independently assessed visual realism based on contrast distribution and anatomical det"
+S259,10.3174/ajnr.a8992,reader study,"Cauley SF, et al. Evaluation of ultrafast Wave-CAIPI MPRAGE for visual grading and automated measurement of brain tissue volume. AJNR Am J Neur"
+S259,10.3174/ajnr.a8992,field strength 3T,contrastenhanced brain MRI in an outpatient setting were scanned on 3T MRI systems. The imaging protocol included a state-of-the-art Wa
+S261,10.3174/ajnr.a9140,reader study,ernately performed using either a 20- or a 64-channel head coil. Two blinded radiologists independently assessed the image quality using a 5-point Likert
+S261,10.3174/ajnr.a9140,field strength 7T,construction in T2-weighted turbo spin-echo imaging of the brain at 7T. AJNR Am J Neuroradiol 2025;46:1517–20 CrossRef Medline 11. En
+S262,10.3174/ajnr.a9097,reader study,lumen was no longer visible (chronic occlusion/vasculopathy). Two neuroradiologists independently evaluated each vessel segment for both wall and lu
+S262,10.3174/ajnr.a9097,field strength 7T,"*Deep-Learning Accelerated Vessel Wall Imaging Using T1-SPACE at Ultra-High-Field Strength MRI** Girish Bathla, Pranjal Rai, Vincent Ern Yao Cha"
+S264,10.3174/ajnr.a8977,reader study,ence scans in the healthy volunteers. Image quality was rated by 2 board-certified neuroradiologists by using a 5-point Likert scale. Statistical analysis included W
+S264,10.3174/ajnr.a8977,field strength 3T,ations. ### MRI Data Acquisition All MRI scans were obtained using 3T scanners from Siemens Healthineers. For the healthy volunteer st
