@@ -257,7 +257,7 @@ squaring discards the sign of the residual. Two are established results we resta
 reference dependence is standard in the image-quality literature, and the null-space
 account underlying the realism--reward trade-off is due to
 \citet{bhadra2021hallucinations} and \citet{gottschling2020troublesome}. What this review adds
-is not the mechanisms but their quantification and their assembly --- the identity at
+is not the mechanisms but their quantification and their assembly: the identity at
 Equation~\eqref{eq:dpsnr_identity}, which converts any lesion volume into the PSNR
 movement its erasure would cause, and the setting of all four against what a corpus of
 263 studies is recorded as measuring. We claim the assembly and the bound, not the
@@ -302,9 +302,9 @@ health outcomes, and no equivalent prospective registry covers methodological re
 this kind. The Open Science Framework deposit cited above therefore timestamps the record
 but is retrospective, and we make no claim of prospective registration on it. Two
 consequences follow. An external record does not exclude undisclosed post-hoc analytic
-choices; and the two analyses we ourselves identify as post-hoc --- the acceleration-factor
+choices; and the two analyses we ourselves identify as post-hoc (the acceleration-factor
 extraction of Table~\ref{tab:acceleration_spectrum} and the venue classification of
-Section~\ref{res:gap_structure} --- are labelled as such wherever they appear.
+Section~\ref{res:gap_structure}) are labelled as such wherever they appear.
 
 \emph{Search strategy.} Seven bibliographic databases (PubMed/MEDLINE, IEEE Xplore,
 Scopus, Web of Science, SpringerLink, OpenAlex, and Semantic Scholar) were searched
@@ -322,8 +322,8 @@ The breadth of this search is by design. Evidence of reconstruction failure is r
 paper's stated subject: artifacts, hallucinations and metric--reader disagreements are most
 often reported in passing inside studies whose declared contribution is a new architecture,
 so a query tuned narrowly to safety vocabulary would miss much of this evidence. Clinical
-and engineering literatures also use distinct vocabularies --- sequences and artifacts
-against inverse problems, unrolled optimization and generative priors --- and neither
+and engineering literatures also use distinct vocabularies (sequences and artifacts
+against inverse problems, unrolled optimization and generative priors), and neither
 database family indexes the other completely. We therefore tuned for sensitivity rather
 than precision and accepted the screening burden. The funnel from $27{,}327$ records to
 $263$ studies is the intended signature of that choice: the burden falls on initial
@@ -395,7 +395,7 @@ structural: PubMed's MeSH arm returned $24{,}693$ records and the six engineerin
 $2{,}634$ between them, and sets that barely overlap leave little to deduplicate. This is
 not a claim of completeness, and one failure is on record: peer review identified an arXiv
 preprint and its journal version that both survived to the included set, carrying different
-DOIs, no shared PMID, and titles differing by terminal punctuation --- below the thresholds
+DOIs, no shared PMID, and titles differing by terminal punctuation, which was below the thresholds
 above. It was removed at revision, taking the corpus from $264$ reports to $263$ studies
 (Section~\ref{sec:results}). Automated matching will not catch a preprint--journal pair
 whose metadata diverges in this way, and the honest inference is that a residual duplicate
@@ -441,8 +441,8 @@ background. The complete decision ledger is released as
 \texttt{fulltext\_screening\_decisions.csv}.
 
 \emph{Publication year.} Every analysis partitioning the corpus by time uses the year of
-the version of record as indexed by the publisher --- the issue year for journal articles,
-the proceedings year for conference papers --- rather than first online posting or preprint
+the version of record as indexed by the publisher (the issue year for journal articles,
+the proceedings year for conference papers) rather than first online posting or preprint
 deposit. The rule matters at era boundaries, and we adopt the indexed year because it is
 what a reader can verify from the reference list, Crossref and PubMed without online-first
 metadata, which is unevenly available across the $87$ venues represented. The same value is
@@ -482,9 +482,9 @@ agreement on the screening decision, not on the extraction labels from which eve
 prevalence count in this article is derived; those remain unaudited for reliability, and
 the only error rate we can quote for them is the measured $4/61$ ($6.6\%$) on the design
 field (Section~\ref{sec:threats}). Second, the conservative labelling policy routed
-almost the whole full-text workload to adjudication in any case --- $1{,}040$ of the
+almost the whole full-text workload to adjudication in any case ($1{,}040$ of the
 $1{,}149$ records advanced at title and abstract were flagged rather than included
-outright --- so a high coefficient is evidence that the criteria were applied
+outright), so a high coefficient is evidence that the criteria were applied
 consistently, not that the borderline records were easy to classify.
 
 What the primary decision records themselves support, and what we therefore also report,
@@ -572,12 +572,12 @@ $34$ first-round studies retaining three independent ratings were unanimous on a
 of their judgements, so they contribute $\kappa = 1.00$ by construction and carry no
 information about latent reliability. The $18$ of the second round were unanimous on $60$
 of $126$ ($47.6\%$), and across those $126$ Fleiss' $\kappa = 0.390$ (95\% CI
-$0.293$--$0.484$) --- fair on the Landis--Koch bands, with an interval reaching into
+$0.293$--$0.484$), falling in the fair range on the Landis--Koch bands, with an interval reaching into
 moderate. The procedure was identical across rounds; the subsets were not, the second
 round comprising studies the first pass deferred as not straightforward. Two readings
-remain open --- that those studies report their methods less completely and are genuinely
+remain open: that those studies report their methods less completely and are genuinely
 harder to rate, and that the first round was less independent in practice than in design
---- and these data do not separate them.
+; these data do not separate them.
 
 The disagreement has a structure worth recording rather than smoothing. Across the $126$
 second-round judgements one reviewer rated Low $33.3\%$ of the time and another $61.9\%$,
@@ -612,7 +612,7 @@ are recorded as \emph{Unclear} (Section~\ref{sec:methods}).}\label{tab:quality_a
 \hline
 Publication period & 1995--2026; 229/263 ($87.1\%$) published in 2020 or later, and 174/263 ($66.2\%$) in 2023 or later, indicating a predominantly recent evidence base. \\
 Basis of assessment, current & Full text available for 258/263 ($98.1\%$); partial or truncated full text for 1/263 ($0.4\%$); title, abstract and MeSH only for 4/263 ($1.5\%$). \\
-Basis of assessment, at appraisal & The first appraisal round was made on the text obtainable at the time, which for 18/263 studies was abstract and MeSH only (6 of them within the QUADAS-2 subset). A later library sweep recovered full text for 14 of those 18 (including 5 of the 6), and all 14 have since been re-appraised on the recovered full text, so appraisal basis now stands at 257/263 full text, 2/263 partial text and 4/263 abstract and MeSH only --- within the QUADAS-2 subset, 56/57 on full text and 1/57 (S001) on abstract-level text. The two rows now differ by a single study (S200), appraised on truncated text whose full version has since become available. \\
+Basis of assessment, at appraisal & The first appraisal round was made on the text obtainable at the time, which for 18/263 studies was abstract and MeSH only (6 of them within the QUADAS-2 subset). A later library sweep recovered full text for 14 of those 18 (including 5 of the 6), and all 14 have since been re-appraised on the recovered full text, so appraisal basis now stands at 257/263 full text, 2/263 partial text and 4/263 abstract and MeSH only (within the QUADAS-2 subset, 56/57 on full text and 1/57 [S001] on abstract-level text). The two rows now differ by a single study (S200), appraised on truncated text whose full version has since become available. \\
 Leading venues & The eight most frequent of the 87 distinct venue titles represented in the corpus, accounting for 128/263 ($48.7\%$) of included studies: \emph{Magnetic Resonance in Medicine} (40), \emph{IEEE Transactions on Medical Imaging} (17), \emph{AJNR} (15), \emph{Magnetic Resonance Imaging} (14), \emph{JMRI} (12), \emph{Scientific Reports} (12), \emph{NeuroImage} (9), \emph{Medical Image Analysis} (9). \\
 Predominant design & Algorithmic / methodological reconstruction studies ($n=206$), alongside a verified observer/reader subset ($n=57$) \citep{radmanesh2022exploring,lang2024ultrafast}. Extraction recorded 61 reader designs; appraisal of their full text found 4 with no human reader, and those 4 were reclassified as algorithmic ($202+4=206$; $61-4=57$). Of the 57: 34 are appraised and verified by all three reviewers; 18 were appraised by all three in a second round and await final adjudication of 6 split domain judgements; and 5 (S004, S020, S027, S034, S115) were re-appraised by the reviewers on full text recovered after the first round, with domain judgements verified against the source text. Every reader-derived statistic in this article uses 57. \\
 Reference standard & Expert reader consensus (70), an unspecified stated ground truth (62), a fully sampled acquisition (69), a conventional or standard-of-care acquisition (15); not stated in 47/263 ($17.9\%$). \\
@@ -642,9 +642,7 @@ Reference Standard & Low: 39/57 ($68.4\%$); Unclear: 3/57 ($5.3\%$); High: 15/57
 Section~\ref{res:gap_structure} groups studies by publication community. That grouping is
 post-hoc, was not part of the fixed protocol, and is stated in full in Supplementary
 Table~S13 so it can be reproduced or contested. Each study's journal title, and nothing
-else about the study, is matched case-insensitively against three ordered keyword lists
---- engineering and methods, then general neuroscience and neuroimaging, then clinical
-imaging --- with anything unmatched left \emph{unclassified} rather than forced into a
+else about the study, is matched case-insensitively against three ordered keyword lists (engineering and methods, then general neuroscience and neuroimaging, then clinical imaging), with anything unmatched left \emph{unclassified} rather than forced into a
 group. The ordering is load-bearing, since titles such as \emph{Medical Image Analysis}
 would otherwise match two lists, and it is applied identically to all $263$ studies. The
 rule as executed and the resulting per-study assignment are released as
@@ -1553,8 +1551,7 @@ double-counts the $107$ studies that acquire both an acute-pathology and a struc
 sequence (Supplementary Table~S11 gives the correction). That the two disjoint strata below sum to $23+84=107$, the same number, is a third coincidence of unrelated tallies rather than a transcription error, verified against the released per-study file as the two flagged in Section~
 ef{sec:requirements} are. Restricted to studies acquiring
 one group and not the other, reader assessment runs at $5/23$ ($21.7\%$) for DWI or
-FLAIR without T1w or T2w against $10/84$ ($11.9\%$) for T1w or T2w without DWI or FLAIR
---- a difference in the direction one would hope for, resting on 23 studies in the
+FLAIR without T1w or T2w against $10/84$ ($11.9\%$) for T1w or T2w without DWI or FLAIR, representing a difference in the direction one would hope for, resting on 23 studies in the
 smaller stratum and not approaching significance (Fisher exact odds ratio $2.06$,
 $p=0.31$). We report it as descriptive and draw only the negative conclusion it
 supports: there is no evidence that reader assessment is \emph{displaced away} from the
@@ -1748,7 +1745,7 @@ report both the $/263$ and the $/144$ denominators wherever the distinction matt
 the headline $18/263$ mixes two depths: the reader label was verified against full text and
 corrected at appraisal, while the metric label was not. That asymmetry biases the
 intersection downward by an unknown factor, and it is the single respect in which our
-headline figure is least defensible as a point estimate --- though the direction is
+headline figure is least defensible as a point estimate, though the direction is
 conservative, since correcting it could only widen the measured gap.
 
 What we offer in place of a reliability coefficient is auditability, and the substitution is
@@ -1777,8 +1774,8 @@ across seven databases, and independent screening and appraisal by three reviewe
 robust protection, and every extracted value is released with the verbatim snippet supporting
 it. Five specific threats bound these findings.
 First, $81$ of the $1{,}149$ candidate reports remain without obtainable text through
-structural licensing barriers. Screening the nearest obtainable stratum --- the $341$
-reports recovered only through title-level subscriptions --- found $86.2\%$ ineligible on
+structural licensing barriers. Screening the nearest obtainable stratum (the $341$
+reports recovered only through title-level subscriptions) found $86.2\%$ ineligible on
 the same criteria, so at that rate the $81$ would contribute on the order of $11$ studies
 rather than $81$. That bounds the missing evidence without establishing that the bias is
 nil. Non-retrieval is demonstrably \emph{not} random with respect to the variable this
@@ -1830,11 +1827,11 @@ retrospective and single-centre \citep{radmanesh2022exploring}; and the largest 
 multicentre multireader trial evaluated 3D T1-weighted acquisitions only, with an
 image-domain DICOM enhancement tool rather than reconstruction from undersampled
 $k$-space, reported improved rather than degraded lesion conspicuity, and has several
-authors affiliated with the vendor of the evaluated tool \citep{bash2021deep} --- we cite
+authors affiliated with the vendor of the evaluated tool \citep{bash2021deep}; we cite
 it for what it does establish, that such tools are cleared and deployed. Finally, the
-benchmark concentration of Section~\ref{res:gap_structure} --- eleven public datasets named
+benchmark concentration of Section~\ref{res:gap_structure} (eleven public datasets named
 across the corpus, not one curated for acute ischaemic stroke or intracranial haemorrhage
---- caps how far any leaderboard result can be carried into emergency imaging.
+) caps how far any leaderboard result can be carried into emergency imaging.
 
 \emph{Conclusion validity.} Because pixel-wise metrics agree only loosely with
 radiologist judgement (RQ1), a study resting on PSNR and SSIM alone supports a safety
